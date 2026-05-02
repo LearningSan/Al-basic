@@ -1,6 +1,20 @@
 __pycache__/
 *.pyc
+venv/
 .env
 
-model/*.safetensors
+dataset/
+train_data/
+results/
 
+model/
+*.bin
+*.pt
+*.safetensors
+
+images/
+
+results/
+checkpoint-*
+runs/
+logs/
