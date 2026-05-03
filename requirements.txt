@@ -1,9 +1,5 @@
 fastapi
 uvicorn
-torch
-transformers
+scikit-learn
+joblib
 pydantic
-requests
-sentencepiece
-tokenizers
-protobuf

@@ -7,5 +7,5 @@ results/
 model/
 *.bin
 *.pt
-*.safetensors
+*.pkl
 

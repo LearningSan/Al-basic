@@ -48,19 +48,18 @@
 
         <!-- INPUT -->
         <input id="ing" class="w-full p-4 rounded-xl text-black" placeholder="VD: cá cà chua hành..." />
-
+        <div class="mt-3 text-sm text-slate-400 bg-slate-800 p-3 rounded-xl">
+            <b>💡 Cách nhập để AI chính xác hơn:</b><br>
+            • Gõ nguyên liệu: <i>cơm, trứng, bò, gà...</i><br>
+            • Hoặc câu tự nhiên: <i>tôi có trứng và cơm</i><br>
+            • Càng nhiều nguyên liệu → AI càng chính xác
+        </div>
         <button onclick="go()" class="mt-4 bg-orange-500 px-6 py-3 rounded-xl font-bold hover:scale-105 transition">
             Gợi ý món ăn
         </button>
 
         <!-- QUICK -->
-        <div class="flex flex-wrap justify-center gap-2 mt-4">
-            <button onclick="setText('cá cà chua hành')" class="bg-slate-700 px-3 py-1 rounded-full">🐟 cá</button>
-            <button onclick="setText('trứng cơm')" class="bg-slate-700 px-3 py-1 rounded-full">🍳 trứng + cơm</button>
-            <button onclick="setText('bò cà rốt')" class="bg-slate-700 px-3 py-1 rounded-full">🥩 bò</button>
-            <button onclick="setText('tôm mực')" class="bg-slate-700 px-3 py-1 rounded-full">🦐 hải sản</button>
-        </div>
-
+        <div id="dish-list" class="flex flex-wrap gap-2 text-sm"></div>
         <!-- RESULT -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
 
@@ -97,11 +96,9 @@
 
         function setText(text) {
             document.getElementById("ing").value = text;
+            go(); // 🔥 auto search luôn
         }
 
-        // =========================
-        // SAME LOGIC CŨ
-        // =========================
         function preprocessInput(text, mode) {
             text = text.toLowerCase().trim();
 
@@ -116,9 +113,6 @@
             return text;
         }
 
-        // =========================
-        // CALL API (GIỮ NGUYÊN)
-        // =========================
         async function go() {
 
             let ing = document.getElementById("ing").value;
@@ -127,7 +121,7 @@
             ing = preprocessInput(ing, currentMode);
 
             const list = document.getElementById("list");
-            list.innerHTML = "<p>⏳ Đang xử lý...</p>";
+            list.innerHTML = `<p class="text-slate-400">⏳ AI đang phân tích...</p>`;
 
             try {
                 const res = await fetch("/predict", {
@@ -136,75 +130,107 @@
                     body: JSON.stringify({ ingredients: ing })
                 });
 
-                if (!res.ok) {
-                    list.innerHTML = "❌ Server lỗi";
-                    return;
-                }
-
                 const data = await res.json();
 
                 if (!data.results) {
-                    list.innerHTML = "❌ AI lỗi";
+                    list.innerHTML = "❌ Không có kết quả";
                     return;
                 }
 
                 list.innerHTML = "";
 
-                data.results.forEach(r => {
+                data.results.forEach((r, index) => {
 
-                    if (!r.dish) return;
+                    const imgSrc = r.image && r.image !== "undefined"
+                        ? r.image
+                        : "/images/default.jpg";
 
-                    const imgSrc = r.image || "/images/default.jpg";
+                    const rankColor =
+                        index === 0 ? "text-yellow-400" :
+                            index === 1 ? "text-slate-300" :
+                                "text-orange-300";
 
-                    list.innerHTML += `
-<div onclick='showDetail(${JSON.stringify(r)})'
-class="card bg-slate-800 rounded-xl p-3 shadow-lg cursor-pointer hover:scale-[1.02] transition">
+                    const card = document.createElement("div");
+                    card.className = "card bg-slate-800 rounded-xl p-3 shadow-lg cursor-pointer hover:scale-[1.03] transition";
 
-<img src="${imgSrc}" class="rounded-lg w-full h-40 object-cover"/>
-<h3 class="text-lg font-bold mt-2">${r.dish}</h3>
-<p class="text-orange-400">${r.confidence}%</p>
-</div>
-`;
+                    card.innerHTML = `
+                <div class="flex justify-between items-center mb-2">
+                    <span class="font-bold ${rankColor}">
+                        #${index + 1}
+                    </span>
+
+                    <span class="text-xs text-slate-400">
+                        match ${(r.match * 100).toFixed(0)}%
+                    </span>
+                </div>
+
+                <img src="${imgSrc}" class="rounded-lg w-full h-40 object-cover"/>
+
+                <h3 class="text-lg font-bold mt-2">${r.dish}</h3>
+
+                <div class="w-full bg-slate-700 h-2 rounded mt-2">
+                    <div class="bg-orange-500 h-2 rounded"
+                        style="width:${Math.min(r.score * 40, 100)}%"></div>
+                </div>
+
+                <button class="mt-3 text-sm bg-orange-500 px-3 py-1 rounded-lg w-full"
+                    onclick='fillInput("${r.slug}")'>
+                    🔁 Dùng món này
+                </button>
+            `;
+
+                    card.onclick = () => showDetail(r);
+
+                    list.appendChild(card);
                 });
 
             } catch (err) {
-                list.innerHTML = "❌ Không kết nối server";
+                list.innerHTML = "❌ Lỗi server";
             }
         }
+
+        // =========================
+        // DETAIL
+        // =========================
         function showDetail(r) {
-            const imgSrc = r.image;
 
             document.getElementById("detail").innerHTML = `
-    <img src="${imgSrc}" class="rounded-lg w-full h-48 object-cover"/>
+        <img src="${r.image}" class="rounded-lg w-full h-48 object-cover"/>
 
-    <h2 class="text-2xl font-bold mt-3">${r.dish}</h2>
-    <p class="text-orange-400 mb-2">Confidence: ${r.confidence}%</p>
+        <h2 class="text-2xl font-bold mt-3">${r.dish}</h2>
 
-    ${r.detail ? `
-      <div class="mt-3 text-sm text-slate-300">
-        <p><b>🕒 Thời gian:</b> ${r.detail.cooking_time} phút</p>
-        <p><b>📊 Độ khó:</b> ${r.detail.difficulty}</p>
+        <div class="mt-3 text-sm text-slate-300">
 
-        <h3 class="mt-3 font-bold">🥗 Nguyên liệu</h3>
-        <ul class="list-disc ml-5">
-         ${(r.detail.ingredients || [])
-                        .map(i => `<li>${i.name}: ${i.amount}</li>`)
-                        .join("")}
-        </ul>
+            <p>🕒 ${r.cooking_time} phút</p>
+            <p>📊 ${r.difficulty}</p>
 
-        <h3 class="mt-3 font-bold">👨‍🍳 Cách làm</h3>
-        <ol class="list-decimal ml-5">
-          ${(r.detail.steps || []).map(s => `<li>${s}</li>`).join("")}
-        </ol>
+            <h3 class="mt-3 font-bold">🥗 Nguyên liệu</h3>
+            <ul class="list-disc ml-5">
+                ${(r.ingredients || []).map(i =>
+                `<li>${i.name}: ${i.amount}</li>`
+            ).join("")}
+            </ul>
 
-        <h3 class="mt-3 font-bold">🧠 AI Explain</h3>
-        <p class="text-slate-400">${r.detail.ai_explain || ""}</p>
-      </div>
-    ` : ""}
-  `;
+            <h3 class="mt-3 font-bold">👨‍🍳 Cách làm</h3>
+            <ol class="list-decimal ml-5">
+                ${(r.steps || []).map(s =>
+                `<li>${s}</li>`
+            ).join("")}
+            </ol>
+
+        </div>
+    `;
         }
-    </script>
 
+        // =========================
+        // AUTO FILL INPUT
+        // =========================
+        function fillInput(slug) {
+            document.getElementById("ing").value = slug;
+            go();
+        }
+
+    </script>
 </body>
 
 </html>

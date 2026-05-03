@@ -4,16 +4,15 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from fastapi.responses import FileResponse
 
-import torch
+import joblib
 import json
 import os
 import re
-import threading
 
 # =========================
 # APP
 # =========================
-app = FastAPI(title="🍳 AI Cooking API")
+app = FastAPI(title="🍳 AI Cooking API (LIGHT FIXED)")
 
 app.add_middleware(
     CORSMiddleware,
@@ -24,194 +23,158 @@ app.add_middleware(
 )
 
 # =========================
-# DEVICE
-# =========================
-device = torch.device("cpu")
-
-# =========================
 # PATH
 # =========================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 IMAGES_DIR = os.path.join(BASE_DIR, "images")
 
 # =========================
-# GLOBAL STATE
+# GLOBAL
 # =========================
-tokenizer = None
 model = None
 id2label = {}
 recipes = {}
 
-model_lock = threading.Lock()
-
 # =========================
-# LABEL MAP
+# LABEL MAP (UI NAME)
 # =========================
 dish_names = {
     "com_chien_trung": "Cơm chiên trứng",
     "trung_chien": "Trứng chiên",
     "bo_xao_hanh": "Bò xào hành",
-    "mi_xao_trung": "Mì xào trứng",
     "mi_xao_bo": "Mì xào bò",
-    "com_chien_duong_chau": "Cơm chiên Dương Châu",
-    "trung_luoc": "Trứng luộc",
     "canh_trung_ca_chua": "Canh trứng cà chua",
-    "trung_op_la": "Trứng ốp la",
-    "bo_kho": "Bò kho",
-    "thit_kho_trung": "Thịt kho trứng",
     "ga_chien": "Gà chiên",
     "ga_nuong": "Gà nướng",
-    "sup_ga": "Súp gà",
     "com_ga": "Cơm gà",
     "bun_bo": "Bún bò",
     "pho_bo": "Phở bò",
     "mi_goi": "Mì gói",
-    "trung_cuon": "Trứng cuộn",
-    "trung_chien_ca_chua": "Trứng chiên cà chua",
-
-    # thêm mới
-    "com_chien_hai_san": "Cơm chiên hải sản",
-    "tom_xao_toi": "Tôm xào tỏi",
     "ca_chien": "Cá chiên",
-    "ca_kho": "Cá kho",
-    "canh_rau": "Canh rau",
-    "rau_xao_toi": "Rau xào tỏi",
     "dau_hu_chien": "Đậu hũ chiên",
-    "dau_hu_sot_ca": "Đậu hũ sốt cà",
     "thit_xao_rau": "Thịt xào rau",
-    "thit_nuong": "Thịt nướng",
-    "trung_hap": "Trứng hấp",
-    "canh_ga": "Canh gà",
-    "mi_xao_hai_san": "Mì xào hải sản",
-    "com_tam": "Cơm tấm",
-    "suon_nuong": "Sườn nướng",
-    "suon_kho": "Sườn kho",
-    "lau_thai": "Lẩu Thái",
-    "lau_ga": "Lẩu gà",
-    "trung_xao_thit": "Trứng xào thịt",
-    "trung_xao_hanh": "Trứng xào hành",
-    "com_tron": "Cơm trộn",
-    "mi_tron": "Mì trộn",
-    "banh_mi_trung": "Bánh mì trứng",
-    "banh_mi_thit": "Bánh mì thịt",
-    "banh_mi_op_la": "Bánh mì ốp la"
+    "com_tron": "Cơm trộn"
 }
 
 # =========================
-# LOAD MODEL (LAZY)
+# LOAD MODEL (PIPELINE SKLEARN)
 # =========================
 def load_model():
-    global tokenizer, model, id2label, recipes
+    global model, id2label, recipes
 
     if model is not None:
         return
 
-    with model_lock:
-        if model is not None:
-            return
+    print("🚀 Loading LIGHT MODEL...")
 
-        print("🚀 Loading model...")
+    model = joblib.load(os.path.join(BASE_DIR, "model/model.pkl"))
 
-        # import TRONG FUNCTION để tránh crash startup Render
-        from transformers import AutoTokenizer, AutoModelForSequenceClassification
+    # labels
+    with open(os.path.join(BASE_DIR, "model/labels.json"), encoding="utf-8") as f:
+        id2label = json.load(f)
 
-        model_name = "OnlySan/AI-suggesting"
-        token = os.getenv("HF_TOKEN")
-
-        tokenizer = AutoTokenizer.from_pretrained(model_name, token=token, use_fast=False)
-
-        model = AutoModelForSequenceClassification.from_pretrained(
-            model_name,
-            token=token,
-            low_cpu_mem_usage=True
-        )
-
-        model.to(device)
-        model.eval()
-
-        # load json
-        with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
-            id2label = json.load(f)
-
-        with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
+    # recipes
+    recipe_path = os.path.join(BASE_DIR, "model/recipes.json")
+    if os.path.exists(recipe_path):
+        with open(recipe_path, encoding="utf-8") as f:
             recipes = json.load(f)
 
-        print("✅ Model loaded!")
+    print("✅ MODEL LOADED")
 
 # =========================
-# STARTUP (QUAN TRỌNG)
+# STARTUP
 # =========================
 @app.on_event("startup")
-def startup_event():
-    threading.Thread(target=load_model).start()
+def startup():
+    load_model()
 
 # =========================
-# NORMALIZE
+# NORMALIZE TEXT
 # =========================
 def normalize(text: str):
     text = text.lower().strip()
     text = re.sub(r"[^a-zA-ZÀ-ỹ0-9\s]", " ", text)
     text = re.sub(r"\s+", " ", text)
-
-    if len(text.split()) <= 2:
-        text = "nguyên liệu món ăn: " + text
-
     return text
 
 # =========================
-# REQUEST
+# REQUEST MODEL
 # =========================
 class Input(BaseModel):
     ingredients: str
 
 # =========================
-# PREDICT CORE
+# PREDICT
 # =========================
-def run_local_predict(text: str):
-    load_model()
+def get_dish_name(slug):
+    return recipes.get(slug, {}).get("name", slug)
 
-    inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True)
-    inputs = {k: v.to(device) for k, v in inputs.items()}
 
-    with torch.no_grad():
-        outputs = model(**inputs)
+def safe_recipe(label):
+    return recipes.get(label, {
+        "id": "-1",
+        "name": label,
+        "image": "/images/default.jpg",
+        "ingredients": [],
+        "steps": [],
+        "ai_explain": "",
+        "difficulty": "unknown",
+        "cooking_time": 0
+    })
 
-    probs = torch.softmax(outputs.logits, dim=1)
-    confidence = torch.max(probs).item()
 
-    pred = torch.argmax(outputs.logits, dim=1).item()
+def ingredient_match_score(text, ingredients):
+    text_set = set(text.split())
+    ing_set = set(ingredients)
 
-    label = id2label.get(str(pred))
+    if not ing_set:
+        return 0
 
-    return label, confidence
+    match = len(text_set & ing_set)
+    return match / len(ing_set)
 
-# =========================
-# MAIN PREDICT
-# =========================
+
 def predict(text: str):
     text = normalize(text)
 
+    # 🔥 lấy score từ model nếu có
     try:
-        label, confidence = run_local_predict(text)
-    except Exception as e:
-        return [{"error": str(e)}]
+        scores = model.decision_function([text])[0]
+    except:
+        scores = [0] * len(id2label)
 
-    if not label:
-        return [{"error": "Model không trả label hợp lệ"}]
+    results = []
 
-    recipe = recipes.get(label, {})
+    for idx, score in enumerate(scores):
 
-    img_path = os.path.join(IMAGES_DIR, f"{label}.jpg")
-    image_url = f"/images/{label}.jpg" if os.path.exists(img_path) else "/images/default.jpg"
+        label = id2label.get(str(idx), str(idx))
+        recipe = safe_recipe(label)
 
-    return [{
-        "slug": label,
-        "dish": dish_names.get(label, label),
-        "image": image_url,
-        "confidence": round(confidence * 100, 2),
-        "detail": recipe
-    }]
+        ingredients = recipe.get("ingredients", [])
+        ing_names = [i["name"] for i in ingredients]
 
+        ing_score = ingredient_match_score(text, ing_names)
+
+        # 🔥 hybrid scoring
+        final_score = (float(score) * 0.7) + (ing_score * 0.3)
+
+        results.append({
+            "slug": label,
+            "dish": recipe.get("name", label),
+            "image": recipe.get("image", "/images/default.jpg"),
+            "ingredients": ingredients,
+            "steps": recipe.get("steps", []),
+            "ai_explain": recipe.get("ai_explain", ""),
+            "difficulty": recipe.get("difficulty", ""),
+            "cooking_time": recipe.get("cooking_time", 0),
+            "score": float(final_score),
+            "match": float(ing_score)
+        })
+
+    # 🔥 sort + TOP 5
+    results = sorted(results, key=lambda x: x["score"], reverse=True)
+
+    return results[:5]
 # =========================
 # ROUTES
 # =========================
@@ -231,16 +194,18 @@ def predict_api(data: Input):
         "results": result
     }
 
+# =========================
+# GET RECIPE DETAIL
+# =========================
 @app.get("/dish/{dish_id}")
 def get_dish_detail(dish_id: str):
 
     recipe = recipes.get(dish_id)
 
     if not recipe:
-        dish_id_norm = dish_id.lower().strip()
-
+        # fallback theo id
         for k, v in recipes.items():
-            if v.get("name", "").lower().strip() == dish_id_norm:
+            if str(v.get("id")) == str(dish_id):
                 recipe = v
                 break
 
@@ -253,7 +218,7 @@ def get_dish_detail(dish_id: str):
     return recipe
 
 # =========================
-# STATIC FILES
+# STATIC IMAGES
 # =========================
 if os.path.exists(IMAGES_DIR):
     app.mount("/images", StaticFiles(directory=IMAGES_DIR), name="images")
