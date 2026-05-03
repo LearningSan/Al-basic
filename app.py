@@ -8,13 +8,12 @@ import torch
 import json
 import os
 import re
-import requests
 
+# =========================
+# APP
+# =========================
 app = FastAPI(title="🍳 AI Cooking API")
 
-# =========================
-# CORS
-# =========================
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -24,14 +23,18 @@ app.add_middleware(
 )
 
 # =========================
-# BASE PATH
+# DEVICE
+# =========================
+device = torch.device("cpu")
+
+# =========================
+# PATH
 # =========================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "model")
 IMAGES_DIR = os.path.join(BASE_DIR, "images")
 
 # =========================
-# GLOBAL STATE (lazy load)
+# GLOBAL STATE
 # =========================
 tokenizer = None
 model = None
@@ -39,52 +42,7 @@ id2label = {}
 recipes = {}
 
 # =========================
-# LOAD MODEL (LAZY)
-# =========================
-def load_model():
-    global tokenizer, model, id2label, recipes
-
-    if model is not None:
-        return
-
-    print("🚀 Loading model từ HuggingFace...")
-
-    model_name = "OnlySan/AI-suggesting"
-
-    token = os.getenv("HF_TOKEN")
-
-    tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
-    model = AutoModelForSequenceClassification.from_pretrained(model_name, token=token)
-
-    model.eval()
-
-    # load dữ liệu local
-    with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
-        id2label = json.load(f)
-
-    with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
-        recipes = json.load(f)
-# =========================
-# STATIC FILES
-# =========================
-if os.path.exists(IMAGES_DIR):
-    app.mount("/images", StaticFiles(directory=IMAGES_DIR), name="images")
-
-# =========================
-# TEXT NORMALIZE
-# =========================
-def normalize(text: str):
-    text = text.lower().strip()
-    text = re.sub(r"[^a-zA-ZÀ-ỹ0-9\s]", " ", text)
-    text = re.sub(r"\s+", " ", text)
-
-    if len(text.split()) <= 2:
-        text = "nguyên liệu món ăn: " + text
-
-    return text
-
-# =========================
-# DISH LABELS
+# LABEL MAP
 # =========================
 dish_names = {
     "com_chien_trung": "Cơm chiên trứng",
@@ -137,73 +95,98 @@ dish_names = {
 }
 
 # =========================
-# INPUT MODEL
+# LOAD MODEL
+# =========================
+def load_model():
+    global tokenizer, model, id2label, recipes
+
+    if model is not None:
+        return
+
+    print("🚀 Loading model...")
+
+    model_name = "OnlySan/AI-suggesting"
+    token = os.getenv("HF_TOKEN")
+
+    tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
+    model = AutoModelForSequenceClassification.from_pretrained(model_name, token=token)
+
+    model.to(device)
+    model.eval()
+
+    # load local data
+    with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
+        id2label = json.load(f)
+
+    with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
+        recipes = json.load(f)
+
+# =========================
+# NORMALIZE TEXT
+# =========================
+def normalize(text: str):
+    text = text.lower().strip()
+    text = re.sub(r"[^a-zA-ZÀ-ỹ0-9\s]", " ", text)
+    text = re.sub(r"\s+", " ", text)
+
+    if len(text.split()) <= 2:
+        text = "nguyên liệu món ăn: " + text
+
+    return text
+
+# =========================
+# REQUEST MODEL
 # =========================
 class Input(BaseModel):
     ingredients: str
 
 # =========================
-# PREDICT
+# PREDICT CORE
 # =========================
+def run_local_predict(text: str):
+    load_model()
 
+    inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True)
+    inputs = {k: v.to(device) for k, v in inputs.items()}
+
+    with torch.no_grad():
+        outputs = model(**inputs)
+
+    probs = torch.softmax(outputs.logits, dim=1)
+    confidence = torch.max(probs).item()
+
+    pred = torch.argmax(outputs.logits, dim=1).item()
+
+    label = id2label.get(str(pred))
+
+    return label, confidence
+
+# =========================
+# MAIN PREDICT
+# =========================
 def predict(text: str):
-    global id2label, recipes
-
     text = normalize(text)
 
-    # load local 1 lần
-    if not id2label:
-        with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
-            id2label = json.load(f)
-
-        with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
-            recipes = json.load(f)
-
-    API_URL = "https://api-inference.huggingface.co/models/OnlySan/AI-suggesting"
-    headers = {
-        "Authorization": f"Bearer {os.getenv('HF_TOKEN')}"
-    }
-
     try:
-        response = requests.post(API_URL, headers=headers, json={"inputs": text}, timeout=10)
-        data = response.json()
+        label, confidence = run_local_predict(text)
     except Exception as e:
-        return [{"error": f"Lỗi gọi AI: {str(e)}"}]
+        return [{"error": str(e)}]
 
-    # lỗi từ HF
-    if isinstance(data, dict):
-        return [{"error": data.get("error", "HF error")}]
+    if not label:
+        return [{"error": "Model không trả label hợp lệ"}]
 
-    # normalize data
-    if isinstance(data, list) and isinstance(data[0], dict):
-        predictions = data
-    elif isinstance(data, list) and isinstance(data[0], list):
-        predictions = data[0]
-    else:
-        return [{"error": "Format AI không hợp lệ"}]
+    recipe = recipes.get(label, {})
 
-    results = []
+    img_path = os.path.join(IMAGES_DIR, f"{label}.jpg")
+    image_url = f"/images/{label}.jpg" if os.path.exists(img_path) else "/images/default.jpg"
 
-    for item in predictions[:3]:
-        label = item.get("label")
-        confidence = item.get("score", 0)
-
-        dish_key = label
-
-        recipe = recipes.get(dish_key, {})
-
-        img_path = os.path.join(IMAGES_DIR, f"{dish_key}.jpg")
-        image_url = f"/images/{dish_key}.jpg" if os.path.exists(img_path) else "/images/default.jpg"
-
-        results.append({
-            "slug": dish_key,
-            "dish": dish_names.get(dish_key, dish_key),
-            "image": image_url,
-            "confidence": round(confidence * 100, 2),
-            "detail": recipe
-        })
-
-    return results
+    return [{
+        "slug": label,
+        "dish": dish_names.get(label, label),
+        "image": image_url,
+        "confidence": round(confidence * 100, 2),
+        "detail": recipe
+    }]
 
 # =========================
 # ROUTES
@@ -244,3 +227,16 @@ def get_dish_detail(dish_id: str):
         }
 
     return recipe
+
+# =========================
+# STARTUP
+# =========================
+@app.on_event("startup")
+def startup():
+    load_model()
+
+# =========================
+# STATIC FILES
+# =========================
+if os.path.exists(IMAGES_DIR):
+    app.mount("/images", StaticFiles(directory=IMAGES_DIR), name="images")
