@@ -126,33 +126,50 @@
 
             ing = preprocessInput(ing, currentMode);
 
-            const res = await fetch("/predict", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ ingredients: ing })
-            });
-
-            const data = await res.json();
-
             const list = document.getElementById("list");
-            list.innerHTML = "";
+            list.innerHTML = "<p>⏳ Đang xử lý...</p>";
 
-            data.results.forEach(r => {
+            try {
+                const res = await fetch("/predict", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ ingredients: ing })
+                });
 
-                if (!r.dish) return;
+                if (!res.ok) {
+                    list.innerHTML = "❌ Server lỗi";
+                    return;
+                }
 
-                const imgSrc = r.image;
+                const data = await res.json();
 
-                list.innerHTML += `
-  <div onclick='showDetail(${JSON.stringify(r)})'
-    class="card bg-slate-800 rounded-xl p-3 shadow-lg cursor-pointer hover:scale-[1.02] transition">
+                if (!data.results) {
+                    list.innerHTML = "❌ AI lỗi";
+                    return;
+                }
 
-    <img src="${imgSrc}" class="rounded-lg w-full h-40 object-cover"/>
-    <h3 class="text-lg font-bold mt-2">${r.dish}</h3>
-    <p class="text-orange-400">${r.confidence}%</p>
-  </div>
+                list.innerHTML = "";
+
+                data.results.forEach(r => {
+
+                    if (!r.dish) return;
+
+                    const imgSrc = r.image || "/images/default.jpg";
+
+                    list.innerHTML += `
+<div onclick='showDetail(${JSON.stringify(r)})'
+class="card bg-slate-800 rounded-xl p-3 shadow-lg cursor-pointer hover:scale-[1.02] transition">
+
+<img src="${imgSrc}" class="rounded-lg w-full h-40 object-cover"/>
+<h3 class="text-lg font-bold mt-2">${r.dish}</h3>
+<p class="text-orange-400">${r.confidence}%</p>
+</div>
 `;
-            });
+                });
+
+            } catch (err) {
+                list.innerHTML = "❌ Không kết nối server";
+            }
         }
         function showDetail(r) {
             const imgSrc = r.image;

@@ -8,6 +8,7 @@ import torch
 import json
 import os
 import re
+import requests
 
 app = FastAPI(title="🍳 AI Cooking API")
 
@@ -144,12 +145,13 @@ class Input(BaseModel):
 # =========================
 # PREDICT
 # =========================
+
 def predict(text: str):
     global id2label, recipes
 
     text = normalize(text)
 
-    # load dữ liệu local (chỉ load 1 lần)
+    # load local 1 lần
     if not id2label:
         with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
             id2label = json.load(f)
@@ -162,18 +164,29 @@ def predict(text: str):
         "Authorization": f"Bearer {os.getenv('HF_TOKEN')}"
     }
 
-    response = requests.post(API_URL, headers=headers, json={"inputs": text})
-    data = response.json()
+    try:
+        response = requests.post(API_URL, headers=headers, json={"inputs": text}, timeout=10)
+        data = response.json()
+    except Exception as e:
+        return [{"error": f"Lỗi gọi AI: {str(e)}"}]
 
-    # HF trả về dạng list
-    if isinstance(data, dict) and "error" in data:
-        return [{"error": data["error"]}]
+    # lỗi từ HF
+    if isinstance(data, dict):
+        return [{"error": data.get("error", "HF error")}]
+
+    # normalize data
+    if isinstance(data, list) and isinstance(data[0], dict):
+        predictions = data
+    elif isinstance(data, list) and isinstance(data[0], list):
+        predictions = data[0]
+    else:
+        return [{"error": "Format AI không hợp lệ"}]
 
     results = []
 
-    for item in data[0][:3]:  # top 3
-        label = item["label"]
-        confidence = item["score"]
+    for item in predictions[:3]:
+        label = item.get("label")
+        confidence = item.get("score", 0)
 
         dish_key = label
 
