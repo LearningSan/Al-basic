@@ -4,3 +4,6 @@ torch
 transformers
 pydantic
 requests
+sentencepiece
+tokenizers
+protobuf

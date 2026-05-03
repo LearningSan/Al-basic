@@ -118,7 +118,7 @@ def load_model():
         model_name = "OnlySan/AI-suggesting"
         token = os.getenv("HF_TOKEN")
 
-        tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
+        tokenizer = AutoTokenizer.from_pretrained(model_name, token=token, use_fast=False)
 
         model = AutoModelForSequenceClassification.from_pretrained(
             model_name,
