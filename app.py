@@ -4,7 +4,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from fastapi.responses import FileResponse
 
-from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import json
 import os
@@ -43,7 +42,6 @@ model = None
 id2label = {}
 recipes = {}
 
-# chống load nhiều lần
 model_lock = threading.Lock()
 
 # =========================
@@ -98,8 +96,9 @@ dish_names = {
     "banh_mi_thit": "Bánh mì thịt",
     "banh_mi_op_la": "Bánh mì ốp la"
 }
+
 # =========================
-# LOAD MODEL (LAZY SAFE)
+# LOAD MODEL (LAZY)
 # =========================
 def load_model():
     global tokenizer, model, id2label, recipes
@@ -111,16 +110,15 @@ def load_model():
         if model is not None:
             return
 
-        print("🚀 Loading model (lazy)...")
+        print("🚀 Loading model...")
+
+        # import TRONG FUNCTION để tránh crash startup Render
+        from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
         model_name = "OnlySan/AI-suggesting"
         token = os.getenv("HF_TOKEN")
 
-        # tối ưu RAM
-        tokenizer = AutoTokenizer.from_pretrained(
-            model_name,
-            token=token
-        )
+        tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
 
         model = AutoModelForSequenceClassification.from_pretrained(
             model_name,
@@ -131,12 +129,21 @@ def load_model():
         model.to(device)
         model.eval()
 
-        # load local data
+        # load json
         with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
             id2label = json.load(f)
 
         with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
             recipes = json.load(f)
+
+        print("✅ Model loaded!")
+
+# =========================
+# STARTUP (QUAN TRỌNG)
+# =========================
+@app.on_event("startup")
+def startup_event():
+    threading.Thread(target=load_model).start()
 
 # =========================
 # NORMALIZE
