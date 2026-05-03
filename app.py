@@ -46,22 +46,21 @@ def load_model():
     if model is not None:
         return
 
-    if not os.path.exists(os.path.join(MODEL_PATH, "config.json")):
-        print("⚠️ No model found → fallback mode")
-        return
+    print("🚀 Loading model từ HuggingFace...")
 
-    print("✅ Loading model...")
+    model_name = "OnlySan/AI-suggesting"
 
-    tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH)
-    model = AutoModelForSequenceClassification.from_pretrained(MODEL_PATH)
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    model = AutoModelForSequenceClassification.from_pretrained(model_name)
+
     model.eval()
 
-    with open(os.path.join(MODEL_PATH, "labels.json"), encoding="utf-8") as f:
+    # load dữ liệu local
+    with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
         id2label = json.load(f)
 
-    with open(os.path.join(MODEL_PATH, "recipes.json"), encoding="utf-8") as f:
+    with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
         recipes = json.load(f)
-
 # =========================
 # STATIC FILES
 # =========================
