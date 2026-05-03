@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🍳 AI Cooking</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        * {
+            font-family: Arial;
+        }
+
+        .card {
+            animation: fadeUp 0.4s ease forwards;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-orange-950 min-h-screen text-white">
+
+    <div class="max-w-6xl mx-auto px-4 py-10">
+        <!-- TITLE -->
+        <h1 class="text-4xl font-bold mb-2">🍳 AI Gợi Ý Món Ăn</h1>
+        <p class="text-slate-400 mb-6">Nhập nguyên liệu → AI gợi ý món ăn phù hợp</p>
+
+        <!-- MODE -->
+        <div class="flex justify-center gap-2 mb-4">
+            <button id="mode-keyword" onclick="setMode('keyword')"
+                class="px-4 py-2 rounded-lg bg-orange-500 text-white">Nguyên liệu</button>
+            <button id="mode-natural" onclick="setMode('natural')" class="px-4 py-2 rounded-lg bg-slate-700">Câu tự
+                nhiên</button>
+        </div>
+
+        <!-- INPUT -->
+        <input id="ing" class="w-full p-4 rounded-xl text-black" placeholder="VD: cá cà chua hành..." />
+
+        <button onclick="go()" class="mt-4 bg-orange-500 px-6 py-3 rounded-xl font-bold hover:scale-105 transition">
+            Gợi ý món ăn
+        </button>
+
+        <!-- QUICK -->
+        <div class="flex flex-wrap justify-center gap-2 mt-4">
+            <button onclick="setText('cá cà chua hành')" class="bg-slate-700 px-3 py-1 rounded-full">🐟 cá</button>
+            <button onclick="setText('trứng cơm')" class="bg-slate-700 px-3 py-1 rounded-full">🍳 trứng + cơm</button>
+            <button onclick="setText('bò cà rốt')" class="bg-slate-700 px-3 py-1 rounded-full">🥩 bò</button>
+            <button onclick="setText('tôm mực')" class="bg-slate-700 px-3 py-1 rounded-full">🦐 hải sản</button>
+        </div>
+
+        <!-- RESULT -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+
+            <!-- LEFT: LIST -->
+            <div class="md:col-span-2">
+                <div id="list" class="grid grid-cols-1 sm:grid-cols-2 gap-4"></div>
+            </div>
+
+            <!-- RIGHT: DETAIL -->
+            <div id="detail" class="bg-slate-800 rounded-xl p-4 h-fit sticky top-10">
+                <p class="text-slate-400">Chọn món để xem chi tiết</p>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+
+        let currentMode = "keyword";
+
+        function setMode(mode) {
+            currentMode = mode;
+
+            document.getElementById("mode-keyword").className =
+                mode === "keyword"
+                    ? "px-4 py-2 rounded-lg bg-orange-500 text-white"
+                    : "px-4 py-2 rounded-lg bg-slate-700";
+
+            document.getElementById("mode-natural").className =
+                mode === "natural"
+                    ? "px-4 py-2 rounded-lg bg-orange-500 text-white"
+                    : "px-4 py-2 rounded-lg bg-slate-700";
+        }
+
+        function setText(text) {
+            document.getElementById("ing").value = text;
+        }
+
+        // =========================
+        // SAME LOGIC CŨ
+        // =========================
+        function preprocessInput(text, mode) {
+            text = text.toLowerCase().trim();
+
+            if (mode === "keyword") {
+                text = text
+                    .replace(/tôi có|nguyên liệu|muốn nấu/g, "")
+                    .replace(/,/g, " ")
+                    .replace(/\s+/g, " ")
+                    .trim();
+            }
+
+            return text;
+        }
+
+        // =========================
+        // CALL API (GIỮ NGUYÊN)
+        // =========================
+        async function go() {
+
+            let ing = document.getElementById("ing").value;
+            if (!ing.trim()) return;
+
+            ing = preprocessInput(ing, currentMode);
+
+            const res = await fetch("http://localhost:8000/predict", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ ingredients: ing })
+            });
+
+            const data = await res.json();
+
+            const list = document.getElementById("list");
+            list.innerHTML = "";
+
+            data.results.forEach(r => {
+
+                if (!r.dish) return;
+
+                const imgSrc = r.image.startsWith("http")
+                    ? r.image
+                    : "http://localhost:8000" + r.image;
+
+                list.innerHTML += `
+  <div onclick='showDetail(${JSON.stringify(r)})'
+    class="card bg-slate-800 rounded-xl p-3 shadow-lg cursor-pointer hover:scale-[1.02] transition">
+
+    <img src="${imgSrc}" class="rounded-lg w-full h-40 object-cover"/>
+    <h3 class="text-lg font-bold mt-2">${r.dish}</h3>
+    <p class="text-orange-400">${r.confidence}%</p>
+  </div>
+`;
+            });
+        }
+        function showDetail(r) {
+            const imgSrc = r.image.startsWith("http")
+                ? r.image
+                : "http://localhost:8000" + r.image;
+
+            document.getElementById("detail").innerHTML = `
+    <img src="${imgSrc}" class="rounded-lg w-full h-48 object-cover"/>
+
+    <h2 class="text-2xl font-bold mt-3">${r.dish}</h2>
+    <p class="text-orange-400 mb-2">Confidence: ${r.confidence}%</p>
+
+    ${r.detail ? `
+      <div class="mt-3 text-sm text-slate-300">
+        <p><b>🕒 Thời gian:</b> ${r.detail.cooking_time} phút</p>
+        <p><b>📊 Độ khó:</b> ${r.detail.difficulty}</p>
+
+        <h3 class="mt-3 font-bold">🥗 Nguyên liệu</h3>
+        <ul class="list-disc ml-5">
+         ${(r.detail.ingredients || [])
+                        .map(i => `<li>${i.name}: ${i.amount}</li>`)
+                        .join("")}
+        </ul>
+
+        <h3 class="mt-3 font-bold">👨‍🍳 Cách làm</h3>
+        <ol class="list-decimal ml-5">
+          ${(r.detail.steps || []).map(s => `<li>${s}</li>`).join("")}
+        </ol>
+
+        <h3 class="mt-3 font-bold">🧠 AI Explain</h3>
+        <p class="text-slate-400">${r.detail.ai_explain || ""}</p>
+      </div>
+    ` : ""}
+  `;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1000 @@
+{
+    "banh_mi_op_la": {
+        "name": "Bánh mì ốp la",
+        "image": "/images/banh_mi_op_la.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            },
+            {
+                "name": "bánh mì",
+                "amount": "1 ổ"
+            },
+            {
+                "name": "dầu ăn",
+                "amount": "1 muỗng"
+            }
+        ],
+        "steps": [
+            "Chiên trứng ốp la",
+            "Ăn kèm bánh mì"
+        ],
+        "cooking_time": 5,
+        "difficulty": "easy",
+        "ai_explain": "Protein trứng kết hợp tinh bột bánh mì tạo bữa sáng giàu năng lượng."
+    },
+    "banh_mi_thit": {
+        "name": "Bánh mì thịt",
+        "image": "/images/banh_mi_thit.jpg",
+        "ingredients": [
+            {
+                "name": "thịt",
+                "amount": "100g"
+            },
+            {
+                "name": "bánh mì",
+                "amount": "1 ổ"
+            },
+            {
+                "name": "rau",
+                "amount": "20g"
+            }
+        ],
+        "steps": [
+            "Nướng thịt",
+            "Kẹp vào bánh mì với rau"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Thịt cung cấp protein, rau tăng chất xơ."
+    },
+    "banh_mi_trung": {
+        "name": "Bánh mì trứng",
+        "image": "/images/banh_mi_trung.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            },
+            {
+                "name": "bánh mì",
+                "amount": "1 ổ"
+            }
+        ],
+        "steps": [
+            "Chiên trứng",
+            "Kẹp vào bánh mì"
+        ],
+        "cooking_time": 5,
+        "difficulty": "easy",
+        "ai_explain": "Món nhanh giàu protein và năng lượng."
+    },
+    "bo_kho": {
+        "name": "Bò kho",
+        "image": "/images/bo_kho.jpg",
+        "ingredients": [
+            {
+                "name": "bò",
+                "amount": "200g"
+            },
+            {
+                "name": "cà rốt",
+                "amount": "50g"
+            },
+            {
+                "name": "khoai",
+                "amount": "50g"
+            }
+        ],
+        "steps": [
+            "Ướp bò",
+            "Hầm bò với rau củ"
+        ],
+        "cooking_time": 60,
+        "difficulty": "hard",
+        "ai_explain": "Hầm lâu giúp collagen trong bò tan ra tạo vị ngọt tự nhiên."
+    },
+    "bo_xao_hanh": {
+        "name": "Bò xào hành",
+        "image": "/images/bo_xao_hanh.jpg",
+        "ingredients": [
+            {
+                "name": "bò",
+                "amount": "150g"
+            },
+            {
+                "name": "hành",
+                "amount": "30g"
+            }
+        ],
+        "steps": [
+            "Xào bò",
+            "Thêm hành cuối"
+        ],
+        "cooking_time": 12,
+        "difficulty": "medium",
+        "ai_explain": "Xào nhanh giữ độ mềm của thịt bò."
+    },
+    "bun_bo": {
+        "name": "Bún bò",
+        "image": "/images/bun_bo.jpg",
+        "ingredients": [
+            {
+                "name": "bún",
+                "amount": "1 tô"
+            },
+            {
+                "name": "bò",
+                "amount": "100g"
+            }
+        ],
+        "steps": [
+            "Nấu nước dùng",
+            "Thêm bún và thịt bò"
+        ],
+        "cooking_time": 45,
+        "difficulty": "hard",
+        "ai_explain": "Nước dùng đậm đà từ xương bò."
+    },
+    "ca_chien": {
+        "name": "Cá chiên",
+        "image": "/images/ca_chien.jpg",
+        "ingredients": [
+            {
+                "name": "cá",
+                "amount": "1 con"
+            },
+            {
+                "name": "dầu ăn",
+                "amount": "1 chén"
+            }
+        ],
+        "steps": [
+            "Làm sạch cá",
+            "Chiên vàng"
+        ],
+        "cooking_time": 15,
+        "difficulty": "easy",
+        "ai_explain": "Chiên giúp tạo lớp vỏ giòn bên ngoài."
+    },
+    "ca_kho": {
+        "name": "Cá kho",
+        "image": "/images/ca_kho.jpg",
+        "ingredients": [
+            {
+                "name": "cá",
+                "amount": "1 con"
+            },
+            {
+                "name": "nước mắm",
+                "amount": "2 muỗng"
+            }
+        ],
+        "steps": [
+            "Ướp cá",
+            "Kho lửa nhỏ"
+        ],
+        "cooking_time": 40,
+        "difficulty": "medium",
+        "ai_explain": "Kho giúp cá thấm gia vị đậm đà."
+    },
+    "canh_ga": {
+        "name": "Canh gà",
+        "image": "/images/canh_ga.jpg",
+        "ingredients": [
+            {
+                "name": "gà",
+                "amount": "200g"
+            },
+            {
+                "name": "nước",
+                "amount": "1 lít"
+            }
+        ],
+        "steps": [
+            "Nấu gà với nước",
+            "Nêm gia vị"
+        ],
+        "cooking_time": 30,
+        "difficulty": "easy",
+        "ai_explain": "Nước canh giàu collagen từ gà."
+    },
+    "canh_rau": {
+        "name": "Canh rau",
+        "image": "/images/canh_rau.jpg",
+        "ingredients": [
+            {
+                "name": "rau",
+                "amount": "100g"
+            },
+            {
+                "name": "nước",
+                "amount": "1 lít"
+            }
+        ],
+        "steps": [
+            "Đun nước",
+            "Cho rau vào"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Rau giữ vitamin khi nấu nhanh."
+    },
+    "canh_trung_ca_chua": {
+        "name": "Canh trứng cà chua",
+        "image": "/images/canh_trung_ca_chua.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            },
+            {
+                "name": "cà chua",
+                "amount": "2 quả"
+            }
+        ],
+        "steps": [
+            "Nấu cà chua",
+            "Đổ trứng vào"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Axit cà chua cân bằng vị béo của trứng."
+    },
+    "com_chien_duong_chau": {
+        "name": "Cơm chiên Dương Châu",
+        "image": "/images/com_chien_duong_chau.jpg",
+        "ingredients": [
+            {
+                "name": "cơm",
+                "amount": "1 chén"
+            },
+            {
+                "name": "trứng",
+                "amount": "1 quả"
+            },
+            {
+                "name": "xúc xích",
+                "amount": "50g"
+            }
+        ],
+        "steps": [
+            "Chiên trứng",
+            "Xào cơm với topping"
+        ],
+        "cooking_time": 15,
+        "difficulty": "easy",
+        "ai_explain": "Cân bằng tinh bột và protein."
+    },
+    "com_chien_hai_san": {
+        "name": "Cơm chiên hải sản",
+        "image": "/images/com_chien_hai_san.jpg",
+        "ingredients": [
+            {
+                "name": "cơm",
+                "amount": "1 chén"
+            },
+            {
+                "name": "tôm",
+                "amount": "50g"
+            },
+            {
+                "name": "mực",
+                "amount": "50g"
+            }
+        ],
+        "steps": [
+            "Xào hải sản",
+            "Chiên cơm"
+        ],
+        "cooking_time": 15,
+        "difficulty": "medium",
+        "ai_explain": "Hải sản giàu protein và khoáng chất."
+    },
+    "com_chien_trung": {
+        "name": "Cơm chiên trứng",
+        "image": "/images/com_chien_trung.jpg",
+        "ingredients": [
+            {
+                "name": "cơm",
+                "amount": "1 chén"
+            },
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            }
+        ],
+        "steps": [
+            "Chiên trứng",
+            "Trộn cơm"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Tinh bột + protein tạo năng lượng cao."
+    },
+    "com_ga": {
+        "name": "Cơm gà",
+        "image": "/images/com_ga.jpg",
+        "ingredients": [
+            {
+                "name": "cơm",
+                "amount": "1 chén"
+            },
+            {
+                "name": "gà",
+                "amount": "100g"
+            }
+        ],
+        "steps": [
+            "Luộc gà",
+            "Ăn kèm cơm"
+        ],
+        "cooking_time": 20,
+        "difficulty": "easy",
+        "ai_explain": "Protein gà dễ tiêu hóa."
+    },
+    "com_tam": {
+        "name": "Cơm tấm",
+        "image": "/images/com_tam.jpg",
+        "ingredients": [
+            {
+                "name": "cơm",
+                "amount": "1 chén"
+            },
+            {
+                "name": "sườn",
+                "amount": "100g"
+            }
+        ],
+        "steps": [
+            "Nướng sườn",
+            "Ăn với cơm"
+        ],
+        "cooking_time": 25,
+        "difficulty": "medium",
+        "ai_explain": "Sườn nướng tạo vị đậm đà."
+    },
+    "com_tron": {
+        "name": "Cơm trộn",
+        "image": "/images/com_tron.jpg",
+        "ingredients": [
+            {
+                "name": "cơm",
+                "amount": "1 chén"
+            },
+            {
+                "name": "rau",
+                "amount": "50g"
+            },
+            {
+                "name": "trứng",
+                "amount": "1 quả"
+            }
+        ],
+        "steps": [
+            "Trộn tất cả nguyên liệu"
+        ],
+        "cooking_time": 5,
+        "difficulty": "easy",
+        "ai_explain": "Món cân bằng dinh dưỡng."
+    },
+    "dau_hu_chien": {
+        "name": "Đậu hũ chiên",
+        "image": "/images/dau_hu_chien.jpg",
+        "ingredients": [
+            {
+                "name": "đậu hũ",
+                "amount": "1 miếng"
+            }
+        ],
+        "steps": [
+            "Chiên đậu hũ"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Protein thực vật nhẹ bụng."
+    },
+    "dau_hu_sot_ca": {
+        "name": "Đậu hũ sốt cà",
+        "image": "/images/dau_hu_sot_ca.jpg",
+        "ingredients": [
+            {
+                "name": "đậu hũ",
+                "amount": "1 miếng"
+            },
+            {
+                "name": "cà chua",
+                "amount": "2 quả"
+            }
+        ],
+        "steps": [
+            "Nấu sốt cà",
+            "Cho đậu hũ vào"
+        ],
+        "cooking_time": 15,
+        "difficulty": "easy",
+        "ai_explain": "Cà chua tăng vị chua nhẹ."
+    },
+    "ga_chien": {
+        "name": "Gà chiên",
+        "image": "/images/ga_chien.jpg",
+        "ingredients": [
+            {
+                "name": "gà",
+                "amount": "200g"
+            },
+            {
+                "name": "bột chiên",
+                "amount": "50g"
+            },
+            {
+                "name": "dầu ăn",
+                "amount": "vừa đủ"
+            }
+        ],
+        "steps": [
+            "Ướp gà với gia vị",
+            "Tẩm bột chiên",
+            "Chiên vàng giòn",
+            "Vớt ra để ráo dầu"
+        ],
+        "cooking_time": 20,
+        "difficulty": "medium",
+        "ai_explain": "Protein gà kết hợp lớp tinh bột chiên tạo độ giòn và năng lượng cao."
+    },
+    "ga_nuong": {
+        "name": "Gà nướng",
+        "image": "/images/ga_nuong.jpg",
+        "ingredients": [
+            {
+                "name": "gà",
+                "amount": "300g"
+            },
+            {
+                "name": "gia vị ướp",
+                "amount": "vừa đủ"
+            }
+        ],
+        "steps": [
+            "Ướp gà với gia vị",
+            "Nướng than hoặc lò",
+            "Trở đều đến khi chín vàng"
+        ],
+        "cooking_time": 45,
+        "difficulty": "medium",
+        "ai_explain": "Nhiệt độ cao giúp caramel hóa protein tạo mùi thơm đặc trưng."
+    },
+    "lau_ga": {
+        "name": "Lẩu gà",
+        "image": "/images/lau_ga.jpg",
+        "ingredients": [
+            {
+                "name": "gà",
+                "amount": "300g"
+            },
+            {
+                "name": "rau",
+                "amount": "200g"
+            },
+            {
+                "name": "nước dùng",
+                "amount": "1 lít"
+            }
+        ],
+        "steps": [
+            "Nấu nước dùng từ gà",
+            "Thêm rau và thịt",
+            "Đun sôi và ăn nóng"
+        ],
+        "cooking_time": 40,
+        "difficulty": "medium",
+        "ai_explain": "Collagen từ gà tan vào nước tạo vị ngọt tự nhiên."
+    },
+    "lau_thai": {
+        "name": "Lẩu Thái",
+        "image": "/images/lau_thai.jpg",
+        "ingredients": [
+            {
+                "name": "tôm",
+                "amount": "150g"
+            },
+            {
+                "name": "mực",
+                "amount": "150g"
+            },
+            {
+                "name": "rau",
+                "amount": "200g"
+            },
+            {
+                "name": "gia vị chua cay",
+                "amount": "vừa đủ"
+            }
+        ],
+        "steps": [
+            "Nấu nước lẩu chua cay",
+            "Cho hải sản vào",
+            "Thêm rau ăn kèm"
+        ],
+        "cooking_time": 30,
+        "difficulty": "hard",
+        "ai_explain": "Hương vị chua cay kích thích vị giác mạnh."
+    },
+    "mi_goi": {
+        "name": "Mì gói",
+        "image": "/images/mi_goi.jpg",
+        "ingredients": [
+            {
+                "name": "mì",
+                "amount": "1 gói"
+            },
+            {
+                "name": "trứng",
+                "amount": "1 quả"
+            }
+        ],
+        "steps": [
+            "Nấu nước sôi",
+            "Cho mì vào",
+            "Thêm trứng và gia vị"
+        ],
+        "cooking_time": 5,
+        "difficulty": "easy",
+        "ai_explain": "Tinh bột nhanh + muối khoáng giúp bổ sung năng lượng tức thì."
+    },
+    "mi_tron": {
+        "name": "Mì trộn",
+        "image": "/images/mi_tron.jpg",
+        "ingredients": [
+            {
+                "name": "mì",
+                "amount": "1 gói"
+            },
+            {
+                "name": "rau",
+                "amount": "50g"
+            },
+            {
+                "name": "nước sốt",
+                "amount": "vừa đủ"
+            }
+        ],
+        "steps": [
+            "Luộc mì",
+            "Trộn với rau",
+            "Thêm sốt"
+        ],
+        "cooking_time": 7,
+        "difficulty": "easy",
+        "ai_explain": "Kết hợp tinh bột và chất xơ giúp cân bằng dinh dưỡng."
+    },
+    "mi_xao_bo": {
+        "name": "Mì xào bò",
+        "image": "/images/mi_xao_bo.jpg",
+        "ingredients": [
+            {
+                "name": "mì",
+                "amount": "1 gói"
+            },
+            {
+                "name": "bò",
+                "amount": "100g"
+            },
+            {
+                "name": "hành",
+                "amount": "10g"
+            }
+        ],
+        "steps": [
+            "Xào bò trước",
+            "Cho mì vào đảo",
+            "Thêm gia vị"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Protein bò kết hợp tinh bột mì tạo món giàu năng lượng."
+    },
+    "mi_xao_hai_san": {
+        "name": "Mì xào hải sản",
+        "image": "/images/mi_xao_hai_san.jpg",
+        "ingredients": [
+            {
+                "name": "mì",
+                "amount": "1 gói"
+            },
+            {
+                "name": "tôm",
+                "amount": "100g"
+            },
+            {
+                "name": "mực",
+                "amount": "100g"
+            }
+        ],
+        "steps": [
+            "Xào hải sản",
+            "Cho mì vào",
+            "Đảo đều và nêm gia vị"
+        ],
+        "cooking_time": 12,
+        "difficulty": "medium",
+        "ai_explain": "Hải sản giàu đạm kết hợp tinh bột giúp cân bằng dinh dưỡng."
+    },
+    "mi_xao_trung": {
+        "name": "Mì xào trứng",
+        "image": "/images/mi_xao_trung.jpg",
+        "ingredients": [
+            {
+                "name": "mì",
+                "amount": "1 gói"
+            },
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            }
+        ],
+        "steps": [
+            "Luộc mì",
+            "Xào trứng",
+            "Cho mì vào đảo đều"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Protein trứng + tinh bột mì tạo độ béo và năng lượng."
+    },
+    "pho_bo": {
+        "name": "Phở bò",
+        "image": "/images/pho_bo.jpg",
+        "ingredients": [
+            {
+                "name": "phở",
+                "amount": "200g"
+            },
+            {
+                "name": "bò",
+                "amount": "150g"
+            },
+            {
+                "name": "nước dùng",
+                "amount": "1 lít"
+            }
+        ],
+        "steps": [
+            "Nấu nước dùng xương bò",
+            "Luộc thịt bò",
+            "Cho phở vào tô"
+        ],
+        "cooking_time": 60,
+        "difficulty": "hard",
+        "ai_explain": "Nước hầm xương tạo vị umami tự nhiên giàu collagen."
+    },
+    "rau_xao_toi": {
+        "name": "Rau xào tỏi",
+        "image": "/images/rau_xao_toi.jpg",
+        "ingredients": [
+            {
+                "name": "rau",
+                "amount": "200g"
+            },
+            {
+                "name": "tỏi",
+                "amount": "10g"
+            }
+        ],
+        "steps": [
+            "Phi tỏi thơm",
+            "Cho rau vào xào nhanh",
+            "Nêm gia vị"
+        ],
+        "cooking_time": 7,
+        "difficulty": "easy",
+        "ai_explain": "Chất xơ và hợp chất sulfur tốt cho tiêu hóa."
+    },
+    "suon_kho": {
+        "name": "Sườn kho",
+        "image": "/images/suon_kho.jpg",
+        "ingredients": [
+            {
+                "name": "sườn",
+                "amount": "300g"
+            },
+            {
+                "name": "nước mắm",
+                "amount": "vừa đủ"
+            }
+        ],
+        "steps": [
+            "Ướp sườn",
+            "Kho nhỏ lửa",
+            "Nấu đến khi mềm"
+        ],
+        "cooking_time": 50,
+        "difficulty": "medium",
+        "ai_explain": "Collagen từ sườn giúp tạo độ mềm và vị ngọt tự nhiên."
+    },
+    "suon_nuong": {
+        "name": "Sườn nướng",
+        "image": "/images/suon_nuong.jpg",
+        "ingredients": [
+            {
+                "name": "sườn",
+                "amount": "300g"
+            },
+            {
+                "name": "gia vị",
+                "amount": "vừa đủ"
+            }
+        ],
+        "steps": [
+            "Ướp sườn",
+            "Nướng than hoặc lò",
+            "Trở đều"
+        ],
+        "cooking_time": 40,
+        "difficulty": "medium",
+        "ai_explain": "Nhiệt cao tạo phản ứng Maillard làm món thơm và đậm vị."
+    },
+    "sup_ga": {
+        "name": "Súp gà",
+        "image": "/images/sup_ga.jpg",
+        "ingredients": [
+            {
+                "name": "gà",
+                "amount": "200g"
+            },
+            {
+                "name": "cà rốt",
+                "amount": "100g"
+            }
+        ],
+        "steps": [
+            "Nấu nước dùng gà",
+            "Thêm rau củ",
+            "Nấu sánh nhẹ"
+        ],
+        "cooking_time": 30,
+        "difficulty": "easy",
+        "ai_explain": "Collagen từ gà hòa tan tạo độ ngọt tự nhiên."
+    },
+    "thit_kho_trung": {
+        "name": "Thịt kho trứng",
+        "image": "/images/thit_kho_trung.jpg",
+        "ingredients": [
+            {
+                "name": "thịt",
+                "amount": "200g"
+            },
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            }
+        ],
+        "steps": [
+            "Kho thịt",
+            "Thêm trứng luộc",
+            "Nấu nhỏ lửa"
+        ],
+        "cooking_time": 60,
+        "difficulty": "medium",
+        "ai_explain": "Protein kép từ thịt và trứng tăng dinh dưỡng."
+    },
+    "thit_nuong": {
+        "name": "Thịt nướng",
+        "image": "/images/thit_nuong.jpg",
+        "ingredients": [
+            {
+                "name": "thịt",
+                "amount": "300g"
+            }
+        ],
+        "steps": [
+            "Ướp thịt",
+            "Nướng đến chín vàng"
+        ],
+        "cooking_time": 30,
+        "difficulty": "easy",
+        "ai_explain": "Phản ứng caramel hóa tạo mùi thơm đặc trưng."
+    },
+    "thit_xao_rau": {
+        "name": "Thịt xào rau",
+        "image": "/images/thit_xao_rau.jpg",
+        "ingredients": [
+            {
+                "name": "thịt",
+                "amount": "150g"
+            },
+            {
+                "name": "rau",
+                "amount": "100g"
+            }
+        ],
+        "steps": [
+            "Xào thịt",
+            "Cho rau vào",
+            "Đảo đều"
+        ],
+        "cooking_time": 15,
+        "difficulty": "easy",
+        "ai_explain": "Kết hợp protein và chất xơ cân bằng dinh dưỡng."
+    },
+    "tom_xao_toi": {
+        "name": "Tôm xào tỏi",
+        "image": "/images/tom_xao_toi.jpg",
+        "ingredients": [
+            {
+                "name": "tôm",
+                "amount": "200g"
+            },
+            {
+                "name": "tỏi",
+                "amount": "10g"
+            }
+        ],
+        "steps": [
+            "Phi tỏi",
+            "Xào tôm",
+            "Nêm gia vị"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Tôm giàu đạm và khoáng chất hỗ trợ cơ bắp."
+    },
+    "trung_chien": {
+        "name": "Trứng chiên",
+        "image": "/images/trung_chien.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            }
+        ],
+        "steps": [
+            "Đánh trứng",
+            "Chiên vàng"
+        ],
+        "cooking_time": 5,
+        "difficulty": "easy",
+        "ai_explain": "Protein trứng dễ hấp thu và giàu dinh dưỡng."
+    },
+    "trung_chien_ca_chua": {
+        "name": "Trứng chiên cà chua",
+        "image": "/images/trung_chien_ca_chua.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            },
+            {
+                "name": "cà chua",
+                "amount": "100g"
+            }
+        ],
+        "steps": [
+            "Xào cà chua",
+            "Đổ trứng vào",
+            "Đảo đều"
+        ],
+        "cooking_time": 8,
+        "difficulty": "easy",
+        "ai_explain": "Lycopene từ cà chua + protein trứng tốt cho sức khỏe."
+    },
+    "trung_cuon": {
+        "name": "Trứng cuộn",
+        "image": "/images/trung_cuon.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "3 quả"
+            }
+        ],
+        "steps": [
+            "Đánh trứng",
+            "Chiên mỏng",
+            "Cuộn lại"
+        ],
+        "cooking_time": 6,
+        "difficulty": "easy",
+        "ai_explain": "Kết cấu protein tạo món mềm và dễ ăn."
+    },
+    "trung_hap": {
+        "name": "Trứng hấp",
+        "image": "/images/trung_hap.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            }
+        ],
+        "steps": [
+            "Đánh trứng",
+            "Hấp cách thủy"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Hấp giúp giữ nguyên dinh dưỡng của trứng."
+    },
+    "trung_luoc": {
+        "name": "Trứng luộc",
+        "image": "/images/trung_luoc.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            }
+        ],
+        "steps": [
+            "Luộc trứng 7–10 phút",
+            "Lột vỏ"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Cách chế biến đơn giản giữ nguyên protein."
+    },
+    "trung_op_la": {
+        "name": "Trứng ốp la",
+        "image": "/images/trung_op_la.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            },
+            {
+                "name": "dầu ăn",
+                "amount": "1 muỗng"
+            }
+        ],
+        "steps": [
+            "Làm nóng chảo",
+            "Đập trứng vào",
+            "Chiên vừa chín"
+        ],
+        "cooking_time": 5,
+        "difficulty": "easy",
+        "ai_explain": "Giữ lòng đỏ mềm giúp hấp thu dinh dưỡng tốt hơn."
+    },
+    "trung_xao_hanh": {
+        "name": "Trứng xào hành",
+        "image": "/images/trung_xao_hanh.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            },
+            {
+                "name": "hành",
+                "amount": "20g"
+            }
+        ],
+        "steps": [
+            "Phi hành",
+            "Đổ trứng vào",
+            "Đảo đều"
+        ],
+        "cooking_time": 7,
+        "difficulty": "easy",
+        "ai_explain": "Hành kích thích vị giác, tăng hương vị món ăn."
+    },
+    "trung_xao_thit": {
+        "name": "Trứng xào thịt",
+        "image": "/images/trung_xao_thit.jpg",
+        "ingredients": [
+            {
+                "name": "trứng",
+                "amount": "2 quả"
+            },
+            {
+                "name": "thịt",
+                "amount": "100g"
+            }
+        ],
+        "steps": [
+            "Xào thịt",
+            "Đổ trứng vào",
+            "Đảo đều đến chín"
+        ],
+        "cooking_time": 10,
+        "difficulty": "easy",
+        "ai_explain": "Protein kép giúp tăng giá trị dinh dưỡng."
+    }
+}
