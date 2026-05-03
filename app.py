@@ -50,8 +50,10 @@ def load_model():
 
     model_name = "OnlySan/AI-suggesting"
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModelForSequenceClassification.from_pretrained(model_name)
+    token = os.getenv("HF_TOKEN")
+
+    tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
+    model = AutoModelForSequenceClassification.from_pretrained(model_name, token=token)
 
     model.eval()
 
