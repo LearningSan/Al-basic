@@ -1,379 +1,7599 @@
 {
-  "bo_xao_hanh": {
+  "bo_chien": {
     "id": "0",
-    "name": "Bò xào hành",
-    "image": "/images/bo_xao_hanh.jpg",
+    "name": "Bo chien",
+    "image": "/images/bo_chien.jpg",
     "category": "stir_fry",
-    "tags": ["quick", "protein", "lunch"],
-    "servings": 1,
-    "calories": 350,
-    "ingredients": [
-      { "name": "thịt bò", "amount": 150, "unit": "g" },
-      { "name": "hành tây", "amount": 80, "unit": "g" },
-      { "name": "tỏi", "amount": 2, "unit": "tép" },
-      { "name": "nước mắm", "amount": 1, "unit": "muỗng" }
+    "tags": [
+      "fried",
+      "protein",
+      "beef",
+      "auto"
     ],
-    "steps": [
-      "Ướp bò với tỏi và nước mắm trong 10 phút",
-      "Phi tỏi thơm",
-      "Xào bò trên lửa lớn",
-      "Cho hành vào đảo nhanh 1–2 phút",
-      "Tắt bếp và dùng nóng"
-    ],
-    "cooking_time": 12,
-    "difficulty": "easy",
-    "tips": ["Xào lửa lớn để bò không bị dai"],
-    "ai_explain": "Món giàu protein, giữ độ mềm của thịt nhờ xào nhanh."
-  },
-
-  "bun_bo": {
-    "id": "1",
-    "name": "Bún bò",
-    "image": "/images/bun_bo.jpg",
-    "category": "noodle",
-    "tags": ["soup", "traditional", "dinner"],
     "servings": 2,
-    "calories": 650,
+    "calories": 533,
     "ingredients": [
-      { "name": "bún", "amount": 200, "unit": "g" },
-      { "name": "thịt bò", "amount": 150, "unit": "g" },
-      { "name": "xương bò", "amount": 500, "unit": "g" },
-      { "name": "sả", "amount": 2, "unit": "cây" }
+      {
+        "name": "thịt bò",
+        "amount": 162,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 158,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 101,
+        "unit": "g"
+      }
     ],
     "steps": [
-      "Hầm xương bò 1–2 giờ để lấy nước dùng",
-      "Nêm gia vị với sả và muối",
-      "Luộc thịt bò riêng",
-      "Trụng bún và cho vào tô",
-      "Chan nước dùng nóng lên"
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 35,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_chien_gion": {
+    "id": "1",
+    "name": "Bo chien gion",
+    "image": "/images/bo_chien_gion.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "fried",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 745,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 179,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 105,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 188,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 10,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_ham": {
+    "id": "2",
+    "name": "Bo ham",
+    "image": "/images/bo_ham.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 677,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 148,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 153,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 6,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_hap": {
+    "id": "3",
+    "name": "Bo hap",
+    "image": "/images/bo_hap.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "healthy",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 388,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 131,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 69,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 51,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Hấp cách thủy",
+      "Không dùng nhiều dầu",
+      "Giữ nguyên độ ngọt tự nhiên"
+    ],
+    "cooking_time": 9,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_hap_tia_to": {
+    "id": "4",
+    "name": "Bo hap tia to",
+    "image": "/images/bo_hap_tia_to.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "healthy",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 262,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 181,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 63,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 104,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Hấp cách thủy",
+      "Không dùng nhiều dầu",
+      "Giữ nguyên độ ngọt tự nhiên"
+    ],
+    "cooking_time": 5,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_kho": {
+    "id": "5",
+    "name": "Bo kho",
+    "image": "/images/bo_kho.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stew",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 200,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 191,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 86,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 57,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Kho nhỏ lửa đến khi sệt",
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm"
     ],
     "cooking_time": 45,
     "difficulty": "hard",
-    "tips": ["Nước dùng càng hầm lâu càng ngọt"],
-    "ai_explain": "Món nước giàu collagen từ xương bò, hương vị đậm đà."
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
   },
-
-  "ca_chien": {
-    "id": "2",
-    "name": "Cá chiên",
-    "image": "/images/ca_chien.jpg",
-    "category": "fried",
-    "tags": ["crispy", "simple", "lunch"],
-    "servings": 1,
-    "calories": 400,
+  "bo_kho_gung": {
+    "id": "6",
+    "name": "Bo kho gung",
+    "image": "/images/bo_kho_gung.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stew",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 487,
     "ingredients": [
-      { "name": "cá", "amount": 1, "unit": "con" },
-      { "name": "muối", "amount": 1, "unit": "muỗng" },
-      { "name": "dầu ăn", "amount": 200, "unit": "ml" }
+      {
+        "name": "thịt bò",
+        "amount": 130,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 186,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 105,
+        "unit": "g"
+      }
     ],
     "steps": [
-      "Làm sạch cá và khía nhẹ thân cá",
-      "Ướp muối 10 phút",
-      "Đun nóng dầu",
-      "Chiên cá đến khi vàng giòn",
+      "Thấm đều gia vị",
+      "Kho nhỏ lửa đến khi sệt",
+      "Ướp gia vị đậm"
+    ],
+    "cooking_time": 58,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_kho_tieu": {
+    "id": "7",
+    "name": "Bo kho tieu",
+    "image": "/images/bo_kho_tieu.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stew",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 681,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 176,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 97,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 187,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Ướp gia vị đậm",
+      "Thấm đều gia vị",
+      "Kho nhỏ lửa đến khi sệt"
+    ],
+    "cooking_time": 58,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_luc_lac": {
+    "id": "8",
+    "name": "Bo luc lac",
+    "image": "/images/bo_luc_lac.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 323,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 129,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 141,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 169,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 26,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_nuong": {
+    "id": "9",
+    "name": "Bo nuong",
+    "image": "/images/bo_nuong.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "grill",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 405,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 122,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 184,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 171,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trở đều để không cháy",
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 21,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_nuong_la_lot": {
+    "id": "10",
+    "name": "Bo nuong la lot",
+    "image": "/images/bo_nuong_la_lot.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "grill",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 567,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 128,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 156,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 199,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút",
+      "Trở đều để không cháy"
+    ],
+    "cooking_time": 45,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_nuong_muoi_ot": {
+    "id": "11",
+    "name": "Bo nuong muoi ot",
+    "image": "/images/bo_nuong_muoi_ot.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "grill",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 669,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 61,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 89,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 69,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 34,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_nuong_pho_mai": {
+    "id": "12",
+    "name": "Bo nuong pho mai",
+    "image": "/images/bo_nuong_pho_mai.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "grill",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 337,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 149,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 131,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 166,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 49,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_nuong_sate": {
+    "id": "13",
+    "name": "Bo nuong sate",
+    "image": "/images/bo_nuong_sate.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "grill",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 617,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 117,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 144,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 57,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút",
+      "Trở đều để không cháy"
+    ],
+    "cooking_time": 33,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_nuong_teriyaki": {
+    "id": "14",
+    "name": "Bo nuong teriyaki",
+    "image": "/images/bo_nuong_teriyaki.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "grill",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 455,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 168,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 170,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 132,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 31,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_rim": {
+    "id": "15",
+    "name": "Bo rim",
+    "image": "/images/bo_rim.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 581,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 137,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 131,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 148,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 16,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_sot_nam": {
+    "id": "16",
+    "name": "Bo sot nam",
+    "image": "/images/bo_sot_nam.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 485,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 76,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 99,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 104,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 24,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_bap_cai": {
+    "id": "17",
+    "name": "Bo xao bap cai",
+    "image": "/images/bo_xao_bap_cai.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "fish",
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 763,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 124,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 100,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 53,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên"
+    ],
+    "cooking_time": 29,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_bong_cai": {
+    "id": "18",
+    "name": "Bo xao bong cai",
+    "image": "/images/bo_xao_bong_cai.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "fish",
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 598,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 112,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 165,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 171,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 18,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_ca_chua": {
+    "id": "19",
+    "name": "Bo xao ca chua",
+    "image": "/images/bo_xao_ca_chua.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "fish",
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 719,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 191,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 131,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 115,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 24,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_cai": {
+    "id": "20",
+    "name": "Bo xao cai",
+    "image": "/images/bo_xao_cai.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "fish",
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 407,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 199,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 68,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 172,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên"
+    ],
+    "cooking_time": 14,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_hanh": {
+    "id": "21",
+    "name": "Bo xao hanh",
+    "image": "/images/bo_xao_hanh.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 504,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 108,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 53,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay"
+    ],
+    "cooking_time": 28,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_kim_chi": {
+    "id": "22",
+    "name": "Bo xao kim chi",
+    "image": "/images/bo_xao_kim_chi.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 667,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 168,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 197,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 174,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên"
+    ],
+    "cooking_time": 28,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_nam": {
+    "id": "23",
+    "name": "Bo xao nam",
+    "image": "/images/bo_xao_nam.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 547,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 171,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 140,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 70,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 44,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_ot": {
+    "id": "24",
+    "name": "Bo xao ot",
+    "image": "/images/bo_xao_ot.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 318,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 174,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 51,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 148,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 15,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_rau": {
+    "id": "25",
+    "name": "Bo xao rau",
+    "image": "/images/bo_xao_rau.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 503,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 109,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 64,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 66,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay"
+    ],
+    "cooking_time": 60,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_sa": {
+    "id": "26",
+    "name": "Bo xao sa",
+    "image": "/images/bo_xao_sa.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 776,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 183,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 162,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 144,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 12,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_thai": {
+    "id": "27",
+    "name": "Bo xao thai",
+    "image": "/images/bo_xao_thai.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 300,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 181,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 59,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 108,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên"
+    ],
+    "cooking_time": 23,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_tieu_den": {
+    "id": "28",
+    "name": "Bo xao tieu den",
+    "image": "/images/bo_xao_tieu_den.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 728,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 133,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 95,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 167,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên"
+    ],
+    "cooking_time": 31,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "bo_xao_toi": {
+    "id": "29",
+    "name": "Bo xao toi",
+    "image": "/images/bo_xao_toi.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "stir_fry",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 241,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 110,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 58,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 12,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_basa_kho": {
+    "id": "30",
+    "name": "Ca basa kho",
+    "image": "/images/ca_basa_kho.jpg",
+    "category": "fried",
+    "tags": [
+      "stew",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 426,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 133,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 77,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 113,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm",
+      "Kho nhỏ lửa đến khi sệt"
+    ],
+    "cooking_time": 13,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_chien": {
+    "id": "31",
+    "name": "Ca chien",
+    "image": "/images/ca_chien.jpg",
+    "category": "fried",
+    "tags": [
+      "fried",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 627,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 194,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 110,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 196,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 8,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_chien_gion": {
+    "id": "32",
+    "name": "Ca chien gion",
+    "image": "/images/ca_chien_gion.jpg",
+    "category": "fried",
+    "tags": [
+      "fried",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 536,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 64,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 87,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 86,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt",
       "Vớt ra để ráo dầu"
     ],
     "cooking_time": 15,
-    "difficulty": "easy",
-    "tips": ["Cá phải khô trước khi chiên để không bắn dầu"],
-    "ai_explain": "Chiên tạo lớp vỏ giòn giữ độ ngọt bên trong thịt cá."
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
   },
-
-  "canh_trung_ca_chua": {
-    "id": "3",
-    "name": "Canh trứng cà chua",
-    "image": "/images/canh_trung_ca_chua.jpg",
-    "category": "soup",
-    "tags": ["light", "healthy", "quick"],
+  "ca_chien_muoi": {
+    "id": "33",
+    "name": "Ca chien muoi",
+    "image": "/images/ca_chien_muoi.jpg",
+    "category": "fried",
+    "tags": [
+      "fried",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 269,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 76,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 76,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 196,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 14,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_chien_sot": {
+    "id": "34",
+    "name": "Ca chien sot",
+    "image": "/images/ca_chien_sot.jpg",
+    "category": "fried",
+    "tags": [
+      "fried",
+      "fish",
+      "protein",
+      "auto"
+    ],
     "servings": 2,
-    "calories": 180,
+    "calories": 696,
     "ingredients": [
-      { "name": "trứng", "amount": 2, "unit": "quả" },
-      { "name": "cà chua", "amount": 2, "unit": "quả" },
-      { "name": "hành lá", "amount": 10, "unit": "g" }
+      {
+        "name": "cá",
+        "amount": 72,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 61,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 118,
+        "unit": "g"
+      }
     ],
     "steps": [
-      "Xào cà chua cho mềm",
-      "Thêm nước và đun sôi",
-      "Đánh trứng và đổ từ từ vào nồi",
-      "Nêm gia vị",
-      "Thêm hành lá và tắt bếp"
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn"
     ],
-    "cooking_time": 10,
-    "difficulty": "easy",
-    "tips": ["Đổ trứng từ từ để tạo vân đẹp"],
-    "ai_explain": "Món nhẹ, dễ tiêu hóa, cân bằng vị chua và béo."
+    "cooking_time": 21,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
   },
-
-  "com_chien_trung": {
-    "id": "4",
-    "name": "Cơm chiên trứng",
-    "image": "/images/com_chien_trung.jpg",
-    "category": "rice",
-    "tags": ["quick", "cheap", "breakfast"],
-    "servings": 1,
-    "calories": 520,
+  "ca_chien_xu": {
+    "id": "35",
+    "name": "Ca chien xu",
+    "image": "/images/ca_chien_xu.jpg",
+    "category": "fried",
+    "tags": [
+      "fried",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 713,
     "ingredients": [
-      { "name": "cơm nguội", "amount": 200, "unit": "g" },
-      { "name": "trứng", "amount": 2, "unit": "quả" },
-      { "name": "hành lá", "amount": 10, "unit": "g" }
+      {
+        "name": "cá",
+        "amount": 59,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 157,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 108,
+        "unit": "g"
+      }
     ],
     "steps": [
-      "Đánh trứng",
-      "Chiên trứng trước",
-      "Cho cơm vào đảo đều",
-      "Nêm gia vị",
-      "Thêm hành lá"
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt"
     ],
-    "cooking_time": 10,
+    "cooking_time": 22,
     "difficulty": "easy",
-    "tips": ["Dùng cơm nguội sẽ tơi hơn"],
-    "ai_explain": "Cung cấp năng lượng nhanh từ tinh bột và protein."
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
   },
-
-  "com_ga": {
-    "id": "5",
-    "name": "Cơm gà",
-    "image": "/images/com_ga.jpg",
-    "category": "rice",
-    "tags": ["protein", "lunch"],
-    "servings": 1,
-    "calories": 600,
+  "ca_dieu_hong": {
+    "id": "36",
+    "name": "Ca dieu hong",
+    "image": "/images/ca_dieu_hong.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 628,
     "ingredients": [
-      { "name": "cơm", "amount": 200, "unit": "g" },
-      { "name": "gà", "amount": 150, "unit": "g" }
+      {
+        "name": "cá",
+        "amount": 101,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 187,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 57,
+        "unit": "g"
+      }
     ],
     "steps": [
-      "Luộc gà chín mềm",
-      "Xé nhỏ thịt gà",
-      "Trộn với cơm nóng",
-      "Ăn kèm nước chấm"
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 56,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_hap": {
+    "id": "37",
+    "name": "Ca hap",
+    "image": "/images/ca_hap.jpg",
+    "category": "fried",
+    "tags": [
+      "healthy",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 604,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 119,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 199,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 139,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Không dùng nhiều dầu",
+      "Giữ nguyên độ ngọt tự nhiên",
+      "Hấp cách thủy"
+    ],
+    "cooking_time": 17,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_hap_bia": {
+    "id": "38",
+    "name": "Ca hap bia",
+    "image": "/images/ca_hap_bia.jpg",
+    "category": "fried",
+    "tags": [
+      "healthy",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 465,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 116,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 54,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 165,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ nguyên độ ngọt tự nhiên",
+      "Không dùng nhiều dầu",
+      "Hấp cách thủy"
+    ],
+    "cooking_time": 43,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_hap_nuoc": {
+    "id": "39",
+    "name": "Ca hap nuoc",
+    "image": "/images/ca_hap_nuoc.jpg",
+    "category": "fried",
+    "tags": [
+      "healthy",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 764,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 95,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 62,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 181,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ nguyên độ ngọt tự nhiên",
+      "Hấp cách thủy",
+      "Không dùng nhiều dầu"
+    ],
+    "cooking_time": 24,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_hap_toi": {
+    "id": "40",
+    "name": "Ca hap toi",
+    "image": "/images/ca_hap_toi.jpg",
+    "category": "fried",
+    "tags": [
+      "healthy",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 611,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 172,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 86,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 99,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Không dùng nhiều dầu",
+      "Hấp cách thủy",
+      "Giữ nguyên độ ngọt tự nhiên"
+    ],
+    "cooking_time": 52,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_hap_xi_dau": {
+    "id": "41",
+    "name": "Ca hap xi dau",
+    "image": "/images/ca_hap_xi_dau.jpg",
+    "category": "fried",
+    "tags": [
+      "healthy",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 505,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 79,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 77,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 162,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ nguyên độ ngọt tự nhiên",
+      "Hấp cách thủy",
+      "Không dùng nhiều dầu"
+    ],
+    "cooking_time": 16,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_kho": {
+    "id": "42",
+    "name": "Ca kho",
+    "image": "/images/ca_kho.jpg",
+    "category": "fried",
+    "tags": [
+      "stew",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 611,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 98,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 124,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 151,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm",
+      "Kho nhỏ lửa đến khi sệt"
+    ],
+    "cooking_time": 35,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_kho_gung": {
+    "id": "43",
+    "name": "Ca kho gung",
+    "image": "/images/ca_kho_gung.jpg",
+    "category": "fried",
+    "tags": [
+      "stew",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 791,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 58,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 143,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 177,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Kho nhỏ lửa đến khi sệt",
+      "Ướp gia vị đậm",
+      "Thấm đều gia vị"
+    ],
+    "cooking_time": 8,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_kho_me": {
+    "id": "44",
+    "name": "Ca kho me",
+    "image": "/images/ca_kho_me.jpg",
+    "category": "fried",
+    "tags": [
+      "stew",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 715,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 152,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 98,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 93,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm",
+      "Kho nhỏ lửa đến khi sệt"
+    ],
+    "cooking_time": 17,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_kho_tieu": {
+    "id": "45",
+    "name": "Ca kho tieu",
+    "image": "/images/ca_kho_tieu.jpg",
+    "category": "fried",
+    "tags": [
+      "stew",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 695,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 135,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 159,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 118,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm",
+      "Kho nhỏ lửa đến khi sệt"
+    ],
+    "cooking_time": 21,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_kho_to": {
+    "id": "46",
+    "name": "Ca kho to",
+    "image": "/images/ca_kho_to.jpg",
+    "category": "fried",
+    "tags": [
+      "stew",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 763,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 188,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 108,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 52,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thấm đều gia vị",
+      "Kho nhỏ lửa đến khi sệt",
+      "Ướp gia vị đậm"
+    ],
+    "cooking_time": 17,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_loc_nuong": {
+    "id": "47",
+    "name": "Ca loc nuong",
+    "image": "/images/ca_loc_nuong.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 451,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 150,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 169,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 127,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Ướp gia vị 30 phút",
+      "Trở đều để không cháy",
+      "Nướng bằng than hoặc lò"
+    ],
+    "cooking_time": 22,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_ngu_nuong": {
+    "id": "48",
+    "name": "Ca ngu nuong",
+    "image": "/images/ca_ngu_nuong.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 459,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 146,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 138,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 181,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 26,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_nuong": {
+    "id": "49",
+    "name": "Ca nuong",
+    "image": "/images/ca_nuong.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 565,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 81,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 56,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 101,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Ướp gia vị 30 phút",
+      "Nướng bằng than hoặc lò",
+      "Trở đều để không cháy"
+    ],
+    "cooking_time": 25,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_nuong_hoa": {
+    "id": "50",
+    "name": "Ca nuong hoa",
+    "image": "/images/ca_nuong_hoa.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 501,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 102,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 189,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 166,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trở đều để không cháy",
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 35,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_nuong_la_chanh": {
+    "id": "51",
+    "name": "Ca nuong la chanh",
+    "image": "/images/ca_nuong_la_chanh.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 320,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 117,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 144,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 153,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trở đều để không cháy",
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 5,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_nuong_muoi_ot": {
+    "id": "52",
+    "name": "Ca nuong muoi ot",
+    "image": "/images/ca_nuong_muoi_ot.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 756,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 154,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 192,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 101,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút",
+      "Trở đều để không cháy"
+    ],
+    "cooking_time": 16,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_nuong_sa": {
+    "id": "53",
+    "name": "Ca nuong sa",
+    "image": "/images/ca_nuong_sa.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 661,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 177,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 181,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 183,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Ướp gia vị 30 phút",
+      "Trở đều để không cháy",
+      "Nướng bằng than hoặc lò"
+    ],
+    "cooking_time": 21,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_nuong_tieu": {
+    "id": "54",
+    "name": "Ca nuong tieu",
+    "image": "/images/ca_nuong_tieu.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 401,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 166,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 128,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 73,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Ướp gia vị 30 phút",
+      "Trở đều để không cháy",
+      "Nướng bằng than hoặc lò"
+    ],
+    "cooking_time": 36,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_ran": {
+    "id": "55",
+    "name": "Ca ran",
+    "image": "/images/ca_ran.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 342,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 166,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 162,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 139,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 31,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_rim": {
+    "id": "56",
+    "name": "Ca rim",
+    "image": "/images/ca_rim.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 253,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 131,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 198,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 188,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 32,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_sot_ca": {
+    "id": "57",
+    "name": "Ca sot ca",
+    "image": "/images/ca_sot_ca.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 464,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 78,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 101,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 171,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 21,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_sot_me": {
+    "id": "58",
+    "name": "Ca sot me",
+    "image": "/images/ca_sot_me.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 305,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 64,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 72,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 127,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 58,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ca_xien_nuong": {
+    "id": "59",
+    "name": "Ca xien nuong",
+    "image": "/images/ca_xien_nuong.jpg",
+    "category": "fried",
+    "tags": [
+      "fish",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 554,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 199,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 186,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 191,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút",
+      "Trở đều để không cháy"
+    ],
+    "cooking_time": 5,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Để ráo dầu trước khi ăn",
+      "Chiên lửa vừa để không cháy"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_bap_cai": {
+    "id": "60",
+    "name": "Canh bap cai",
+    "image": "/images/canh_bap_cai.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 414,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 192,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 118,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 101,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn"
     ],
     "cooking_time": 20,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_bi_do_thit": {
+    "id": "61",
+    "name": "Canh bi do thit",
+    "image": "/images/canh_bi_do_thit.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 578,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 59,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 185,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 73,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 54,
     "difficulty": "easy",
-    "tips": ["Luộc gà với gừng để thơm hơn"],
-    "ai_explain": "Món giàu protein, dễ tiêu hóa."
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_cai_bo_xoi": {
+    "id": "62",
+    "name": "Canh cai bo xoi",
+    "image": "/images/canh_cai_bo_xoi.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 432,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 101,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 94,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn"
+    ],
+    "cooking_time": 30,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_chua_ca_chem": {
+    "id": "63",
+    "name": "Canh chua ca chem",
+    "image": "/images/canh_chua_ca_chem.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 509,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 83,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 132,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 157,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 8,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_chua_ca_loc": {
+    "id": "64",
+    "name": "Canh chua ca loc",
+    "image": "/images/canh_chua_ca_loc.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 267,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 181,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 142,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 182,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 12,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_chua_tom": {
+    "id": "65",
+    "name": "Canh chua tom",
+    "image": "/images/canh_chua_tom.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 368,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 146,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 133,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 86,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 36,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_cua": {
+    "id": "66",
+    "name": "Canh cua",
+    "image": "/images/canh_cua.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 293,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 190,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 161,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 140,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 19,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_dau_hu_ca_chua": {
+    "id": "67",
+    "name": "Canh dau hu ca chua",
+    "image": "/images/canh_dau_hu_ca_chua.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 467,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 199,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 53,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 118,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 41,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_ga_rau_cai": {
+    "id": "68",
+    "name": "Canh ga rau cai",
+    "image": "/images/canh_ga_rau_cai.jpg",
+    "category": "soup",
+    "tags": [
+      "chicken",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 479,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 184,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 142,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 93,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 54,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_heo_tia_to": {
+    "id": "69",
+    "name": "Canh heo tia to",
+    "image": "/images/canh_heo_tia_to.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 626,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 97,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 81,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 85,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn"
+    ],
+    "cooking_time": 15,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_khoai_mo": {
+    "id": "70",
+    "name": "Canh khoai mo",
+    "image": "/images/canh_khoai_mo.jpg",
+    "category": "soup",
+    "tags": [
+      "stew",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 216,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 56,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 115,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 150,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm",
+      "Kho nhỏ lửa đến khi sệt"
+    ],
+    "cooking_time": 35,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_kim_chi": {
+    "id": "71",
+    "name": "Canh kim chi",
+    "image": "/images/canh_kim_chi.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 379,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 149,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 93,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 10,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_mang": {
+    "id": "72",
+    "name": "Canh mang",
+    "image": "/images/canh_mang.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 670,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 53,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 124,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 65,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 23,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_mang_ga": {
+    "id": "73",
+    "name": "Canh mang ga",
+    "image": "/images/canh_mang_ga.jpg",
+    "category": "soup",
+    "tags": [
+      "chicken",
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 365,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 73,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 190,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 155,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 27,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_moc": {
+    "id": "74",
+    "name": "Canh moc",
+    "image": "/images/canh_moc.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 699,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 119,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 56,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 72,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 40,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_nam": {
+    "id": "75",
+    "name": "Canh nam",
+    "image": "/images/canh_nam.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 251,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 151,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 159,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 66,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 13,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_rau_ngot": {
+    "id": "76",
+    "name": "Canh rau ngot",
+    "image": "/images/canh_rau_ngot.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 203,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 59,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 64,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 73,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 10,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_rieu_cua": {
+    "id": "77",
+    "name": "Canh rieu cua",
+    "image": "/images/canh_rieu_cua.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 262,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 118,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 83,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 146,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 54,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_suon_chua": {
+    "id": "78",
+    "name": "Canh suon chua",
+    "image": "/images/canh_suon_chua.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 498,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 181,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 159,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 72,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 34,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_suon_non": {
+    "id": "79",
+    "name": "Canh suon non",
+    "image": "/images/canh_suon_non.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 281,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 94,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 131,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 128,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 45,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "canh_tom_rong_bien": {
+    "id": "80",
+    "name": "Canh tom rong bien",
+    "image": "/images/canh_tom_rong_bien.jpg",
+    "category": "soup",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 798,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 190,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 167,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 72,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 32,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "cha_ca": {
+    "id": "81",
+    "name": "Cha ca",
+    "image": "/images/cha_ca.jpg",
+    "category": "auto",
+    "tags": [
+      "fish",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 392,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 88,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 76,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 73,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 23,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "cha_gio": {
+    "id": "82",
+    "name": "Cha gio",
+    "image": "/images/cha_gio.jpg",
+    "category": "auto",
+    "tags": [
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 427,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 12,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_bi_cha": {
+    "id": "83",
+    "name": "Com bi cha",
+    "image": "/images/com_bi_cha.jpg",
+    "category": "rice",
+    "tags": [
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 761,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 63,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 19,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_cari": {
+    "id": "84",
+    "name": "Com cari",
+    "image": "/images/com_cari.jpg",
+    "category": "rice",
+    "tags": [
+      "fish",
+      "rice",
+      "protein",
+      "auto",
+      "quick"
+    ],
+    "servings": 2,
+    "calories": 383,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 129,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 180,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 149,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Trình bày món ăn",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 49,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chay": {
+    "id": "85",
+    "name": "Com chay",
+    "image": "/images/com_chay.jpg",
+    "category": "rice",
+    "tags": [
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 772,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 183,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 59,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_bo": {
+    "id": "86",
+    "name": "Com chien bo",
+    "image": "/images/com_chien_bo.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "protein",
+      "beef",
+      "auto",
+      "quick"
+    ],
+    "servings": 1,
+    "calories": 679,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 97,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 87,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 160,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 21,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_ca": {
+    "id": "87",
+    "name": "Com chien ca",
+    "image": "/images/com_chien_ca.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "fish",
+      "rice",
+      "protein",
+      "auto",
+      "quick"
+    ],
+    "servings": 2,
+    "calories": 612,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 112,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 152,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 130,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 10,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_ca_basa": {
+    "id": "88",
+    "name": "Com chien ca basa",
+    "image": "/images/com_chien_ca_basa.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "fish",
+      "rice",
+      "protein",
+      "auto",
+      "quick"
+    ],
+    "servings": 1,
+    "calories": 276,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 186,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 163,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 141,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 50,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_ca_muoi": {
+    "id": "89",
+    "name": "Com chien ca muoi",
+    "image": "/images/com_chien_ca_muoi.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "fish",
+      "rice",
+      "protein",
+      "auto",
+      "quick"
+    ],
+    "servings": 3,
+    "calories": 603,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 200,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 163,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 146,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 22,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_dau": {
+    "id": "90",
+    "name": "Com chien dau",
+    "image": "/images/com_chien_dau.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 765,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 126,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 38,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_dau_hu": {
+    "id": "91",
+    "name": "Com chien dau hu",
+    "image": "/images/com_chien_dau_hu.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 783,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 158,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 44,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_gung": {
+    "id": "92",
+    "name": "Com chien gung",
+    "image": "/images/com_chien_gung.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 558,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 111,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 50,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_hai_san": {
+    "id": "93",
+    "name": "Com chien hai san",
+    "image": "/images/com_chien_hai_san.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 659,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 106,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 21,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_muc": {
+    "id": "94",
+    "name": "Com chien muc",
+    "image": "/images/com_chien_muc.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 401,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 39,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_nam": {
+    "id": "95",
+    "name": "Com chien nam",
+    "image": "/images/com_chien_nam.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 383,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 124,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 31,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_ot": {
+    "id": "96",
+    "name": "Com chien ot",
+    "image": "/images/com_chien_ot.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 799,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 162,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 22,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_sate": {
+    "id": "97",
+    "name": "Com chien sate",
+    "image": "/images/com_chien_sate.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 324,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 129,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 11,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_thap_cam": {
+    "id": "98",
+    "name": "Com chien thap cam",
+    "image": "/images/com_chien_thap_cam.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "healthy",
+      "fish",
+      "rice",
+      "protein",
+      "auto",
+      "quick"
+    ],
+    "servings": 2,
+    "calories": 242,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 137,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 143,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 181,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Giữ nguyên độ ngọt tự nhiên",
+      "Hấp cách thủy",
+      "Không dùng nhiều dầu",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 38,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_thit": {
+    "id": "99",
+    "name": "Com chien thit",
+    "image": "/images/com_chien_thit.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 257,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 53,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_tom": {
+    "id": "100",
+    "name": "Com chien tom",
+    "image": "/images/com_chien_tom.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 478,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 130,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 24,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_trung": {
+    "id": "101",
+    "name": "Com chien trung",
+    "image": "/images/com_chien_trung.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "egg",
+      "protein",
+      "auto",
+      "quick"
+    ],
+    "servings": 1,
+    "calories": 552,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 70,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 105,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 5,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_chien_xuc_xich": {
+    "id": "102",
+    "name": "Com chien xuc xich",
+    "image": "/images/com_chien_xuc_xich.jpg",
+    "category": "rice",
+    "tags": [
+      "fried",
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 510,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 178,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 12,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_ga": {
+    "id": "103",
+    "name": "Com ga",
+    "image": "/images/com_ga.jpg",
+    "category": "rice",
+    "tags": [
+      "rice",
+      "protein",
+      "auto",
+      "chicken",
+      "quick"
+    ],
+    "servings": 1,
+    "calories": 294,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 136,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 77,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 173,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 17,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_rang_dua_bo": {
+    "id": "104",
+    "name": "Com rang dua bo",
+    "image": "/images/com_rang_dua_bo.jpg",
+    "category": "rice",
+    "tags": [
+      "rice",
+      "protein",
+      "beef",
+      "auto",
+      "quick"
+    ],
+    "servings": 2,
+    "calories": 442,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 181,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 175,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 157,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 31,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_rang_toi": {
+    "id": "105",
+    "name": "Com rang toi",
+    "image": "/images/com_rang_toi.jpg",
+    "category": "rice",
+    "tags": [
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 372,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 58,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 20,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_suon": {
+    "id": "106",
+    "name": "Com suon",
+    "image": "/images/com_suon.jpg",
+    "category": "rice",
+    "tags": [
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 465,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 152,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn"
+    ],
+    "cooking_time": 8,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "com_tam": {
+    "id": "107",
+    "name": "Com tam",
+    "image": "/images/com_tam.jpg",
+    "category": "rice",
+    "tags": [
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 283,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 58,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn"
+    ],
+    "cooking_time": 17,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
   },
   "com_tron": {
-  "id": "6",
-  "name": "Cơm trộn",
-  "image": "/images/com_tron.jpg",
-  "category": "rice",
-  "tags": ["healthy", "quick", "balanced"],
-  "servings": 1,
-  "calories": 480,
-  "ingredients": [
-    { "name": "cơm trắng", "amount": 200, "unit": "g" },
-    { "name": "rau cải", "amount": 50, "unit": "g" },
-    { "name": "trứng", "amount": 1, "unit": "quả" },
-    { "name": "nước tương", "amount": 1, "unit": "muỗng" }
-  ],
-  "steps": [
-    "Luộc hoặc xào sơ rau cho chín vừa",
-    "Chiên trứng lòng đào hoặc chín tùy thích",
-    "Cho cơm vào tô",
-    "Xếp rau và trứng lên trên",
-    "Rưới nước tương và trộn đều"
-  ],
-  "cooking_time": 5,
-  "difficulty": "easy",
-  "tips": ["Có thể thêm kim chi hoặc thịt nếu muốn đậm vị"],
-  "ai_explain": "Món ăn cân bằng 3 nhóm chất: tinh bột, protein và chất xơ."
-},
- "dau_hu_chien": {
-  "id": "7",
-  "name": "Đậu hũ chiên",
-  "image": "/images/dau_hu_chien.jpg",
-  "category": "fried",
-  "tags": ["vegetarian", "cheap", "protein"],
-  "servings": 1,
-  "calories": 250,
-  "ingredients": [
-    { "name": "đậu hũ", "amount": 1, "unit": "miếng" },
-    { "name": "dầu ăn", "amount": 150, "unit": "ml" },
-    { "name": "muối", "amount": 1, "unit": "ít" }
-  ],
-  "steps": [
-    "Cắt đậu hũ thành miếng vừa ăn",
-    "Làm nóng dầu",
-    "Chiên đến khi vàng đều các mặt",
-    "Vớt ra để ráo dầu"
-  ],
-  "cooking_time": 10,
-  "difficulty": "easy",
-  "tips": ["Đậu hũ nên để ráo nước trước khi chiên"],
-  "ai_explain": "Nguồn protein thực vật tốt cho người ăn nhẹ hoặc ăn chay."
-},
+    "id": "108",
+    "name": "Com tron",
+    "image": "/images/com_tron.jpg",
+    "category": "rice",
+    "tags": [
+      "rice",
+      "quick",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 411,
+    "ingredients": [
+      {
+        "name": "cơm",
+        "amount": 140,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 51,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "dau_hu_ap_chao": {
+    "id": "109",
+    "name": "Dau hu ap chao",
+    "image": "/images/dau_hu_ap_chao.jpg",
+    "category": "vegetarian",
+    "tags": [
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 304,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 49,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "dau_hu_kim_chi": {
+    "id": "110",
+    "name": "Dau hu kim chi",
+    "image": "/images/dau_hu_kim_chi.jpg",
+    "category": "vegetarian",
+    "tags": [
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 356,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 32,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ech_chien": {
+    "id": "111",
+    "name": "Ech chien",
+    "image": "/images/ech_chien.jpg",
+    "category": "auto",
+    "tags": [
+      "fried",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 679,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 41,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ech_xao_sa_ot": {
+    "id": "112",
+    "name": "Ech xao sa ot",
+    "image": "/images/ech_xao_sa_ot.jpg",
+    "category": "auto",
+    "tags": [
+      "stir_fry",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 724,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay"
+    ],
+    "cooking_time": 44,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_ap_chao": {
+    "id": "113",
+    "name": "Ga ap chao",
+    "image": "/images/ga_ap_chao.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 692,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 169,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 176,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 176,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu",
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 11,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
   "ga_chien": {
-  "id": "8",
-  "name": "Gà chiên",
-  "image": "/images/ga_chien.jpg",
-  "category": "fried",
-  "tags": ["crispy", "protein", "fastfood"],
-  "servings": 2,
-  "calories": 720,
-  "ingredients": [
-    { "name": "thịt gà", "amount": 200, "unit": "g" },
-    { "name": "bột chiên giòn", "amount": 50, "unit": "g" },
-    { "name": "dầu ăn", "amount": 300, "unit": "ml" },
-    { "name": "muối", "amount": 1, "unit": "muỗng nhỏ" }
-  ],
-  "steps": [
-    "Ướp gà với muối 10 phút",
-    "Lăn gà qua bột chiên giòn",
-    "Đun nóng dầu",
-    "Chiên đến khi vàng giòn",
-    "Để ráo dầu trước khi ăn"
-  ],
-  "cooking_time": 20,
-  "difficulty": "medium",
-  "tips": ["Chiên 2 lần sẽ giòn hơn"],
-  "ai_explain": "Món giàu năng lượng, lớp vỏ giòn giúp tăng hương vị."
-},
- "ga_nuong": {
-  "id": "9",
-  "name": "Gà nướng",
-  "image": "/images/ga_nuong.jpg",
-  "category": "grill",
-  "tags": ["smoky", "protein", "dinner"],
-  "servings": 2,
-  "calories": 650,
-  "ingredients": [
-    { "name": "gà", "amount": 300, "unit": "g" },
-    { "name": "tỏi", "amount": 3, "unit": "tép" },
-    { "name": "mật ong", "amount": 1, "unit": "muỗng" },
-    { "name": "nước mắm", "amount": 1, "unit": "muỗng" }
-  ],
-  "steps": [
-    "Ướp gà với tỏi, mật ong và nước mắm",
-    "Để thấm gia vị ít nhất 30 phút",
-    "Nướng bằng lò hoặc than",
-    "Trở đều hai mặt cho chín vàng"
-  ],
-  "cooking_time": 45,
-  "difficulty": "medium",
-  "tips": ["Ướp lâu sẽ ngon hơn nhiều"],
-  "ai_explain": "Nhiệt cao giúp caramel hóa tạo mùi thơm đặc trưng."
-},
-  "mi_goi": {
-  "id": "10",
-  "name": "Mì gói",
-  "image": "/images/mi_goi.jpg",
-  "category": "instant",
-  "tags": ["fast", "cheap", "lazy_food"],
-  "servings": 1,
-  "calories": 420,
-  "ingredients": [
-    { "name": "mì gói", "amount": 1, "unit": "gói" },
-    { "name": "trứng", "amount": 1, "unit": "quả" }
-  ],
-  "steps": [
-    "Đun nước sôi",
-    "Cho mì vào nấu 2–3 phút",
-    "Thêm trứng vào",
-    "Cho gói gia vị"
-  ],
-  "cooking_time": 5,
-  "difficulty": "easy",
-  "tips": ["Không nên nấu quá lâu sẽ bị bở"],
-  "ai_explain": "Giải pháp nhanh cho bữa ăn đơn giản."
-},
-  "mi_xao_bo": {
-  "id": "11",
-  "name": "Mì xào bò",
-  "image": "/images/mi_xao_bo.jpg",
-  "category": "stir_fry",
-  "tags": ["noodle", "protein", "quick"],
-  "servings": 1,
-  "calories": 580,
-  "ingredients": [
-    { "name": "mì", "amount": 1, "unit": "gói" },
-    { "name": "thịt bò", "amount": 100, "unit": "g" },
-    { "name": "hành", "amount": 10, "unit": "g" },
-    { "name": "dầu ăn", "amount": 1, "unit": "muỗng" }
-  ],
-  "steps": [
-    "Luộc mì cho mềm",
-    "Xào bò với hành",
-    "Cho mì vào đảo đều",
-    "Nêm gia vị vừa ăn"
-  ],
-  "cooking_time": 10,
-  "difficulty": "easy",
-  "tips": ["Xào lửa lớn để mì không bị nhão"],
-  "ai_explain": "Kết hợp tinh bột và protein tạo năng lượng nhanh."
-},
-  "pho_bo": {
-  "id": "12",
-  "name": "Phở bò",
-  "image": "/images/pho_bo.jpg",
-  "category": "soup",
-  "tags": ["traditional", "soup", "rich_flavor"],
-  "servings": 2,
-  "calories": 700,
-  "ingredients": [
-    { "name": "bánh phở", "amount": 200, "unit": "g" },
-    { "name": "thịt bò", "amount": 150, "unit": "g" },
-    { "name": "xương bò", "amount": 500, "unit": "g" },
-    { "name": "hành", "amount": 20, "unit": "g" }
-  ],
-  "steps": [
-    "Hầm xương bò ít nhất 1 giờ",
-    "Nêm gia vị nước dùng",
-    "Trụng bánh phở",
-    "Thêm thịt bò tái hoặc chín",
-    "Chan nước dùng nóng"
-  ],
-  "cooking_time": 60,
-  "difficulty": "hard",
-  "tips": ["Nước dùng quyết định 70% độ ngon"],
-  "ai_explain": "Món truyền thống giàu collagen và hương vị tự nhiên."
-},
- "thit_xao_rau": {
-  "id": "13",
-  "name": "Thịt xào rau",
-  "image": "/images/thit_xao_rau.jpg",
-  "category": "stir_fry",
-  "tags": ["healthy", "balanced", "home_food"],
-  "servings": 1,
-  "calories": 320,
-  "ingredients": [
-    { "name": "thịt", "amount": 150, "unit": "g" },
-    { "name": "rau cải", "amount": 100, "unit": "g" },
-    { "name": "tỏi", "amount": 2, "unit": "tép" }
-  ],
-  "steps": [
-    "Phi tỏi cho thơm",
-    "Xào thịt trước",
-    "Cho rau vào đảo nhanh",
-    "Nêm gia vị"
-  ],
-  "cooking_time": 15,
-  "difficulty": "easy",
-  "tips": ["Không xào rau quá lâu để giữ độ giòn"],
-  "ai_explain": "Món cân bằng giữa protein và chất xơ."
-},"trung_chien": {
-  "id": "14",
-  "name": "Trứng chiên",
-  "image": "/images/trung_chien.jpg",
-  "category": "fried",
-  "tags": ["quick", "breakfast", "protein"],
-  "servings": 1,
-  "calories": 220,
-  "ingredients": [
-    { "name": "trứng", "amount": 2, "unit": "quả" },
-    { "name": "muối", "amount": 1, "unit": "ít" },
-    { "name": "dầu ăn", "amount": 1, "unit": "muỗng" }
-  ],
-  "steps": [
-    "Đánh trứng với muối",
-    "Làm nóng chảo",
-    "Chiên trứng đến khi vàng",
-    "Lật đều hai mặt"
-  ],
-  "cooking_time": 5,
-  "difficulty": "easy",
-  "tips": ["Thêm hành sẽ thơm hơn"],
-  "ai_explain": "Nguồn protein đơn giản, dễ hấp thụ."
-}
+    "id": "114",
+    "name": "Ga chien",
+    "image": "/images/ga_chien.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "fried",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 204,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 182,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 164,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 123,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 15,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_chien_bo_toi": {
+    "id": "115",
+    "name": "Ga chien bo toi",
+    "image": "/images/ga_chien_bo_toi.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "fried",
+      "protein",
+      "beef",
+      "auto",
+      "chicken"
+    ],
+    "servings": 1,
+    "calories": 328,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 80,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 179,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 197,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 28,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_chien_xu": {
+    "id": "116",
+    "name": "Ga chien xu",
+    "image": "/images/ga_chien_xu.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "fried",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 664,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 58,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 52,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 61,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 37,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_cuon": {
+    "id": "117",
+    "name": "Ga cuon",
+    "image": "/images/ga_cuon.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 466,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 111,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 91,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 91,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn"
+    ],
+    "cooking_time": 50,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_ham": {
+    "id": "118",
+    "name": "Ga ham",
+    "image": "/images/ga_ham.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 550,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 140,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 163,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 15,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_hap_gung": {
+    "id": "119",
+    "name": "Ga hap gung",
+    "image": "/images/ga_hap_gung.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "healthy",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 239,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 167,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 119,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 187,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Không dùng nhiều dầu",
+      "Giữ nguyên độ ngọt tự nhiên",
+      "Hấp cách thủy"
+    ],
+    "cooking_time": 49,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_hap_muoi": {
+    "id": "120",
+    "name": "Ga hap muoi",
+    "image": "/images/ga_hap_muoi.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "healthy",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 393,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 98,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 172,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 120,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Hấp cách thủy",
+      "Không dùng nhiều dầu",
+      "Giữ nguyên độ ngọt tự nhiên"
+    ],
+    "cooking_time": 55,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_kho": {
+    "id": "121",
+    "name": "Ga kho",
+    "image": "/images/ga_kho.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "stew",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 244,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 65,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 120,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 194,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm",
+      "Kho nhỏ lửa đến khi sệt"
+    ],
+    "cooking_time": 23,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_kho_gung": {
+    "id": "122",
+    "name": "Ga kho gung",
+    "image": "/images/ga_kho_gung.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "stew",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 728,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 63,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 160,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 79,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Ướp gia vị đậm",
+      "Kho nhỏ lửa đến khi sệt",
+      "Thấm đều gia vị"
+    ],
+    "cooking_time": 15,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_kho_tieu": {
+    "id": "123",
+    "name": "Ga kho tieu",
+    "image": "/images/ga_kho_tieu.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "stew",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 766,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 159,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 196,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 55,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Kho nhỏ lửa đến khi sệt",
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm"
+    ],
+    "cooking_time": 7,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_luoc": {
+    "id": "124",
+    "name": "Ga luoc",
+    "image": "/images/ga_luoc.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 368,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 126,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 154,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 90,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 34,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_nau_nuoc": {
+    "id": "125",
+    "name": "Ga nau nuoc",
+    "image": "/images/ga_nau_nuoc.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 643,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 161,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 67,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 151,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 18,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_nuong": {
+    "id": "126",
+    "name": "Ga nuong",
+    "image": "/images/ga_nuong.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 611,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 101,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 138,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 131,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trở đều để không cháy",
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 49,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_nuong_la_chanh": {
+    "id": "127",
+    "name": "Ga nuong la chanh",
+    "image": "/images/ga_nuong_la_chanh.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 292,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 119,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 59,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 68,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Ướp gia vị 30 phút",
+      "Nướng bằng than hoặc lò",
+      "Trở đều để không cháy"
+    ],
+    "cooking_time": 42,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_nuong_mat_ong": {
+    "id": "128",
+    "name": "Ga nuong mat ong",
+    "image": "/images/ga_nuong_mat_ong.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 546,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 156,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 113,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 200,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 43,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_nuong_muoi_ot": {
+    "id": "129",
+    "name": "Ga nuong muoi ot",
+    "image": "/images/ga_nuong_muoi_ot.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 370,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 69,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 197,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 139,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút",
+      "Nướng bằng than hoặc lò"
+    ],
+    "cooking_time": 21,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_nuong_sate": {
+    "id": "130",
+    "name": "Ga nuong sate",
+    "image": "/images/ga_nuong_sate.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 460,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 64,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 50,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 41,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_quay": {
+    "id": "131",
+    "name": "Ga quay",
+    "image": "/images/ga_quay.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 215,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 196,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 164,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 192,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn"
+    ],
+    "cooking_time": 45,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_ran": {
+    "id": "132",
+    "name": "Ga ran",
+    "image": "/images/ga_ran.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 672,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 167,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 99,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 190,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn"
+    ],
+    "cooking_time": 15,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_ran_gion": {
+    "id": "133",
+    "name": "Ga ran gion",
+    "image": "/images/ga_ran_gion.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 471,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 60,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 163,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 69,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 34,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_rim": {
+    "id": "134",
+    "name": "Ga rim",
+    "image": "/images/ga_rim.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 210,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 119,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 119,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 171,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 35,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_sot_tieu_den": {
+    "id": "135",
+    "name": "Ga sot tieu den",
+    "image": "/images/ga_sot_tieu_den.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 751,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 86,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 81,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 123,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Sơ chế nguyên liệu",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Trình bày món ăn",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 28,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_xao_chua_ngot": {
+    "id": "136",
+    "name": "Ga xao chua ngot",
+    "image": "/images/ga_xao_chua_ngot.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "stir_fry",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 379,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 87,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 57,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 64,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 57,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_xao_kim_chi": {
+    "id": "137",
+    "name": "Ga xao kim chi",
+    "image": "/images/ga_xao_kim_chi.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "stir_fry",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 697,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 109,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 121,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 179,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên"
+    ],
+    "cooking_time": 55,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_xao_nam": {
+    "id": "138",
+    "name": "Ga xao nam",
+    "image": "/images/ga_xao_nam.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "stir_fry",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 688,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 188,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 78,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 123,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 52,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_xao_ot": {
+    "id": "139",
+    "name": "Ga xao ot",
+    "image": "/images/ga_xao_ot.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "stir_fry",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 454,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 63,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 99,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 140,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên",
+      "Xào nguyên liệu trên lửa lớn"
+    ],
+    "cooking_time": 17,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_xao_rau": {
+    "id": "140",
+    "name": "Ga xao rau",
+    "image": "/images/ga_xao_rau.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "stir_fry",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 331,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 98,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 187,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 137,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ độ giòn tự nhiên",
+      "Xào nguyên liệu trên lửa lớn",
+      "Thêm gia vị và đảo nhanh tay"
+    ],
+    "cooking_time": 56,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_xao_sa_ot": {
+    "id": "141",
+    "name": "Ga xao sa ot",
+    "image": "/images/ga_xao_sa_ot.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "stir_fry",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 683,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 181,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 64,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 147,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay"
+    ],
+    "cooking_time": 39,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "ga_xien_nuong": {
+    "id": "142",
+    "name": "Ga xien nuong",
+    "image": "/images/ga_xien_nuong.jpg",
+    "category": "stir_fry",
+    "tags": [
+      "chicken",
+      "grill",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 471,
+    "ingredients": [
+      {
+        "name": "thịt gà",
+        "amount": 174,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 64,
+        "unit": "g"
+      },
+      {
+        "name": "tiêu",
+        "amount": 135,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trở đều để không cháy",
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút"
+    ],
+    "cooking_time": 11,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng",
+      "Xào nhanh tay để giữ độ giòn",
+      "Dùng lửa lớn"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "lau_de": {
+    "id": "143",
+    "name": "Lau de",
+    "image": "/images/lau_de.jpg",
+    "category": "hotpot",
+    "tags": [
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 659,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị"
+    ],
+    "cooking_time": 18,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "luon_kho": {
+    "id": "144",
+    "name": "Luon kho",
+    "image": "/images/luon_kho.jpg",
+    "category": "auto",
+    "tags": [
+      "stew",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 434,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Thấm đều gia vị",
+      "Kho nhỏ lửa đến khi sệt",
+      "Ướp gia vị đậm"
+    ],
+    "cooking_time": 52,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "luon_xao": {
+    "id": "145",
+    "name": "Luon xao",
+    "image": "/images/luon_xao.jpg",
+    "category": "auto",
+    "tags": [
+      "stir_fry",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 683,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Thêm gia vị và đảo nhanh tay",
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên"
+    ],
+    "cooking_time": 46,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "mi_xao_thap_cam": {
+    "id": "146",
+    "name": "Mi xao thap cam",
+    "image": "/images/mi_xao_thap_cam.jpg",
+    "category": "noodle",
+    "tags": [
+      "fast",
+      "healthy",
+      "fish",
+      "stir_fry",
+      "protein",
+      "auto",
+      "noodle"
+    ],
+    "servings": 1,
+    "calories": 534,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 148,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 50,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 159,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Không dùng nhiều dầu",
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên",
+      "Giữ nguyên độ ngọt tự nhiên",
+      "Xào nguyên liệu trên lửa lớn",
+      "Hấp cách thủy"
+    ],
+    "cooking_time": 24,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "muc_chien": {
+    "id": "147",
+    "name": "Muc chien",
+    "image": "/images/muc_chien.jpg",
+    "category": "seafood",
+    "tags": [
+      "fried",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 522,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 37,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "muc_nuong": {
+    "id": "148",
+    "name": "Muc nuong",
+    "image": "/images/muc_nuong.jpg",
+    "category": "seafood",
+    "tags": [
+      "grill",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 466,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút",
+      "Nướng bằng than hoặc lò"
+    ],
+    "cooking_time": 27,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "muc_xao_sa_ot": {
+    "id": "149",
+    "name": "Muc xao sa ot",
+    "image": "/images/muc_xao_sa_ot.jpg",
+    "category": "seafood",
+    "tags": [
+      "stir_fry",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 615,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay"
+    ],
+    "cooking_time": 31,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "nem_chua": {
+    "id": "150",
+    "name": "Nem chua",
+    "image": "/images/nem_chua.jpg",
+    "category": "auto",
+    "tags": [
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 312,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 7,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "tom_chien": {
+    "id": "151",
+    "name": "Tom chien",
+    "image": "/images/tom_chien.jpg",
+    "category": "seafood",
+    "tags": [
+      "fried",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 656,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 33,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "tom_nuong": {
+    "id": "152",
+    "name": "Tom nuong",
+    "image": "/images/tom_nuong.jpg",
+    "category": "seafood",
+    "tags": [
+      "grill",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 483,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Nướng bằng than hoặc lò",
+      "Ướp gia vị 30 phút",
+      "Trở đều để không cháy"
+    ],
+    "cooking_time": 27,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "tom_xao_toi": {
+    "id": "153",
+    "name": "Tom xao toi",
+    "image": "/images/tom_xao_toi.jpg",
+    "category": "seafood",
+    "tags": [
+      "stir_fry",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 651,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Thêm gia vị và đảo nhanh tay",
+      "Giữ độ giòn tự nhiên"
+    ],
+    "cooking_time": 60,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien": {
+    "id": "154",
+    "name": "Trung chien",
+    "image": "/images/trung_chien.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 200,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 111,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 80,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 49,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_bo": {
+    "id": "155",
+    "name": "Trung chien bo",
+    "image": "/images/trung_chien_bo.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "beef",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 422,
+    "ingredients": [
+      {
+        "name": "thịt bò",
+        "amount": 130,
+        "unit": "g"
+      },
+      {
+        "name": "tỏi",
+        "amount": 155,
+        "unit": "g"
+      },
+      {
+        "name": "nước mắm",
+        "amount": 51,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 9,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_ca_chua": {
+    "id": "156",
+    "name": "Trung chien ca chua",
+    "image": "/images/trung_chien_ca_chua.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "fish",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 359,
+    "ingredients": [
+      {
+        "name": "cá",
+        "amount": 171,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 151,
+        "unit": "g"
+      },
+      {
+        "name": "gừng",
+        "amount": 89,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 26,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_gion": {
+    "id": "157",
+    "name": "Trung chien gion",
+    "image": "/images/trung_chien_gion.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 354,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 135,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 198,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 49,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_hanh": {
+    "id": "158",
+    "name": "Trung chien hanh",
+    "image": "/images/trung_chien_hanh.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 541,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 132,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 149,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 37,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_kim_chi": {
+    "id": "159",
+    "name": "Trung chien kim chi",
+    "image": "/images/trung_chien_kim_chi.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 381,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 142,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 189,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 11,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_nam": {
+    "id": "160",
+    "name": "Trung chien nam",
+    "image": "/images/trung_chien_nam.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 461,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 143,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 140,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 47,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_nuoc_mam": {
+    "id": "161",
+    "name": "Trung chien nuoc mam",
+    "image": "/images/trung_chien_nuoc_mam.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 763,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 54,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 75,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 27,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_pho_mai": {
+    "id": "162",
+    "name": "Trung chien pho mai",
+    "image": "/images/trung_chien_pho_mai.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 663,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 86,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 195,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu",
+      "Làm nóng dầu ăn"
+    ],
+    "cooking_time": 53,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_rau": {
+    "id": "163",
+    "name": "Trung chien rau",
+    "image": "/images/trung_chien_rau.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 534,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 173,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 115,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 38,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_sot": {
+    "id": "164",
+    "name": "Trung chien sot",
+    "image": "/images/trung_chien_sot.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 611,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 182,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 119,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 9,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_thit": {
+    "id": "165",
+    "name": "Trung chien thit",
+    "image": "/images/trung_chien_thit.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 406,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 78,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 180,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chiên vàng đều hai mặt",
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 9,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_toi": {
+    "id": "166",
+    "name": "Trung chien toi",
+    "image": "/images/trung_chien_toi.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 384,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 59,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 124,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 6,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_tom": {
+    "id": "167",
+    "name": "Trung chien tom",
+    "image": "/images/trung_chien_tom.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 408,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 160,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 57,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Vớt ra để ráo dầu",
+      "Chiên vàng đều hai mặt"
+    ],
+    "cooking_time": 23,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_chien_xuc_xich": {
+    "id": "168",
+    "name": "Trung chien xuc xich",
+    "image": "/images/trung_chien_xuc_xich.jpg",
+    "category": "egg",
+    "tags": [
+      "fried",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 382,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 91,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 172,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Làm nóng dầu ăn",
+      "Chiên vàng đều hai mặt",
+      "Vớt ra để ráo dầu"
+    ],
+    "cooking_time": 39,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_cuon": {
+    "id": "169",
+    "name": "Trung cuon",
+    "image": "/images/trung_cuon.jpg",
+    "category": "egg",
+    "tags": [
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 716,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 185,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 112,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 40,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_hap": {
+    "id": "170",
+    "name": "Trung hap",
+    "image": "/images/trung_hap.jpg",
+    "category": "egg",
+    "tags": [
+      "healthy",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 407,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 170,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 139,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Hấp cách thủy",
+      "Không dùng nhiều dầu",
+      "Giữ nguyên độ ngọt tự nhiên"
+    ],
+    "cooking_time": 35,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_hap_thit": {
+    "id": "171",
+    "name": "Trung hap thit",
+    "image": "/images/trung_hap_thit.jpg",
+    "category": "egg",
+    "tags": [
+      "healthy",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 732,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 104,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 101,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Hấp cách thủy",
+      "Không dùng nhiều dầu",
+      "Giữ nguyên độ ngọt tự nhiên"
+    ],
+    "cooking_time": 50,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_hap_tom": {
+    "id": "172",
+    "name": "Trung hap tom",
+    "image": "/images/trung_hap_tom.jpg",
+    "category": "egg",
+    "tags": [
+      "healthy",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 415,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 127,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 101,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Không dùng nhiều dầu",
+      "Hấp cách thủy",
+      "Giữ nguyên độ ngọt tự nhiên"
+    ],
+    "cooking_time": 54,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_kho": {
+    "id": "173",
+    "name": "Trung kho",
+    "image": "/images/trung_kho.jpg",
+    "category": "egg",
+    "tags": [
+      "stew",
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 635,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 89,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 197,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Kho nhỏ lửa đến khi sệt",
+      "Thấm đều gia vị",
+      "Ướp gia vị đậm"
+    ],
+    "cooking_time": 52,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_luoc": {
+    "id": "174",
+    "name": "Trung luoc",
+    "image": "/images/trung_luoc.jpg",
+    "category": "egg",
+    "tags": [
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 654,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 153,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 142,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Chuẩn bị gia vị",
+      "Nêm nếm vừa ăn",
+      "Chế biến món ăn",
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu"
+    ],
+    "cooking_time": 7,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_op_la": {
+    "id": "175",
+    "name": "Trung op la",
+    "image": "/images/trung_op_la.jpg",
+    "category": "egg",
+    "tags": [
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 553,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 73,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 130,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn",
+      "Nêm nếm vừa ăn"
+    ],
+    "cooking_time": 21,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_rim": {
+    "id": "176",
+    "name": "Trung rim",
+    "image": "/images/trung_rim.jpg",
+    "category": "egg",
+    "tags": [
+      "egg",
+      "protein",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 414,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 62,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 67,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Nêm nếm vừa ăn",
+      "Trình bày món ăn",
+      "Chuẩn bị gia vị",
+      "Sơ chế nguyên liệu",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 18,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_xao_hanh": {
+    "id": "177",
+    "name": "Trung xao hanh",
+    "image": "/images/trung_xao_hanh.jpg",
+    "category": "egg",
+    "tags": [
+      "egg",
+      "stir_fry",
+      "protein",
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 728,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 55,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 64,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Xào nguyên liệu trên lửa lớn",
+      "Giữ độ giòn tự nhiên",
+      "Thêm gia vị và đảo nhanh tay"
+    ],
+    "cooking_time": 42,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "trung_xao_thit": {
+    "id": "178",
+    "name": "Trung xao thit",
+    "image": "/images/trung_xao_thit.jpg",
+    "category": "egg",
+    "tags": [
+      "egg",
+      "stir_fry",
+      "protein",
+      "auto"
+    ],
+    "servings": 2,
+    "calories": 778,
+    "ingredients": [
+      {
+        "name": "trứng",
+        "amount": 139,
+        "unit": "g"
+      },
+      {
+        "name": "muối",
+        "amount": 197,
+        "unit": "g"
+      }
+    ],
+    "steps": [
+      "Giữ độ giòn tự nhiên",
+      "Xào nguyên liệu trên lửa lớn",
+      "Thêm gia vị và đảo nhanh tay"
+    ],
+    "cooking_time": 50,
+    "difficulty": "easy",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "vit_kho": {
+    "id": "179",
+    "name": "Vit kho",
+    "image": "/images/vit_kho.jpg",
+    "category": "stew",
+    "tags": [
+      "stew",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 365,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Kho nhỏ lửa đến khi sệt",
+      "Ướp gia vị đậm",
+      "Thấm đều gia vị"
+    ],
+    "cooking_time": 38,
+    "difficulty": "hard",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "vit_luoc": {
+    "id": "180",
+    "name": "Vit luoc",
+    "image": "/images/vit_luoc.jpg",
+    "category": "stew",
+    "tags": [
+      "auto"
+    ],
+    "servings": 1,
+    "calories": 572,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Trình bày món ăn",
+      "Nêm nếm vừa ăn",
+      "Sơ chế nguyên liệu",
+      "Chuẩn bị gia vị",
+      "Chế biến món ăn"
+    ],
+    "cooking_time": 7,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  },
+  "vit_nuong": {
+    "id": "181",
+    "name": "Vit nuong",
+    "image": "/images/vit_nuong.jpg",
+    "category": "stew",
+    "tags": [
+      "grill",
+      "auto"
+    ],
+    "servings": 3,
+    "calories": 409,
+    "ingredients": [
+      {
+        "name": "nguyên liệu",
+        "amount": 1,
+        "unit": "phần"
+      }
+    ],
+    "steps": [
+      "Trở đều để không cháy",
+      "Ướp gia vị 30 phút",
+      "Nướng bằng than hoặc lò"
+    ],
+    "cooking_time": 28,
+    "difficulty": "medium",
+    "tips": [
+      "Điều chỉnh gia vị theo khẩu vị",
+      "Nên ăn khi còn nóng"
+    ],
+    "ai_explain": "Món ăn được AI tạo với nhiều phong cách nấu khác nhau để tăng đa dạng dữ liệu."
+  }
 }

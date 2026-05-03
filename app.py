@@ -12,7 +12,7 @@ import re
 # =========================
 # APP
 # =========================
-app = FastAPI(title="🍳 AI Cooking API (LIGHT FIXED)")
+app = FastAPI(title="🍳 AI Cooking API (AUTO FIXED)")
 
 app.add_middleware(
     CORSMiddleware,
@@ -34,52 +34,86 @@ IMAGES_DIR = os.path.join(BASE_DIR, "images")
 model = None
 id2label = {}
 recipes = {}
+dish_names = {}
 
 # =========================
-# LABEL MAP (UI NAME)
+# AUTO VIETNAMESE NAME MAP
 # =========================
-dish_names = {
-    "com_chien_trung": "Cơm chiên trứng",
-    "trung_chien": "Trứng chiên",
-    "bo_xao_hanh": "Bò xào hành",
-    "mi_xao_bo": "Mì xào bò",
-    "canh_trung_ca_chua": "Canh trứng cà chua",
-    "ga_chien": "Gà chiên",
-    "ga_nuong": "Gà nướng",
-    "com_ga": "Cơm gà",
-    "bun_bo": "Bún bò",
-    "pho_bo": "Phở bò",
-    "mi_goi": "Mì gói",
-    "ca_chien": "Cá chiên",
-    "dau_hu_chien": "Đậu hũ chiên",
-    "thit_xao_rau": "Thịt xào rau",
-    "com_tron": "Cơm trộn"
+VN_DICT = {
+    "com": "Cơm",
+    "chien": "chiên",
+    "xao": "xào",
+    "kho": "kho",
+    "nuong": "nướng",
+    "hap": "hấp",
+    "luoc": "luộc",
+    "tron": "trộn",
+    "canh": "canh",
+    "bun": "bún",
+    "pho": "phở",
+    "mi": "mì",
+    "ga": "gà",
+    "bo": "bò",
+    "ca": "cá",
+    "trung": "trứng",
+    "thit": "thịt",
+    "tom": "tôm",
+    "muc": "mực",
+    "rau": "rau",
+    "toi": "tỏi",
+    "hanh": "hành",
+    "ot": "ớt",
+    "sa": "sả",
+    "me": "me",
+    "gung": "gừng",
+    "kim_chi": "kim chi",
+    "xuc_xich": "xúc xích",
+    "pho_mai": "phô mai",
+    "nuoc_mam": "nước mắm",
+    "mat_ong": "mật ong",
+    "chua_ngot": "chua ngọt",
+    "bo_xao": "bò xào",
+    "ga_xao": "gà xào",
+    "ca_xao": "cá xào",
 }
 
+def auto_vietnamese_name(slug: str):
+    parts = slug.split("_")
+    words = []
+
+    for p in parts:
+        words.append(VN_DICT.get(p, p))
+
+    return " ".join(words).capitalize()
+
 # =========================
-# LOAD MODEL (PIPELINE SKLEARN)
+# LOAD MODEL
 # =========================
 def load_model():
-    global model, id2label, recipes
+    global model, id2label, recipes, dish_names
 
     if model is not None:
         return
 
-    print("🚀 Loading LIGHT MODEL...")
+    print("🚀 Loading MODEL...")
 
     model = joblib.load(os.path.join(BASE_DIR, "model/model.pkl"))
 
-    # labels
     with open(os.path.join(BASE_DIR, "model/labels.json"), encoding="utf-8") as f:
         id2label = json.load(f)
 
-    # recipes
     recipe_path = os.path.join(BASE_DIR, "model/recipes.json")
     if os.path.exists(recipe_path):
         with open(recipe_path, encoding="utf-8") as f:
             recipes = json.load(f)
 
-    print("✅ MODEL LOADED")
+    # =========================
+    # AUTO GENERATE dish_names
+    # =========================
+    for k in recipes.keys():
+        dish_names[k] = auto_vietnamese_name(k)
+
+    print(f"✅ Loaded {len(dish_names)} dish names")
 
 # =========================
 # STARTUP
@@ -89,7 +123,7 @@ def startup():
     load_model()
 
 # =========================
-# NORMALIZE TEXT
+# NORMALIZE
 # =========================
 def normalize(text: str):
     text = text.lower().strip()
@@ -98,18 +132,14 @@ def normalize(text: str):
     return text
 
 # =========================
-# REQUEST MODEL
+# REQUEST
 # =========================
 class Input(BaseModel):
     ingredients: str
 
 # =========================
-# PREDICT
+# SAFE RECIPE
 # =========================
-def get_dish_name(slug):
-    return recipes.get(slug, {}).get("name", slug)
-
-
 def safe_recipe(label):
     return recipes.get(label, {
         "id": "-1",
@@ -122,7 +152,9 @@ def safe_recipe(label):
         "cooking_time": 0
     })
 
-
+# =========================
+# SCORE
+# =========================
 def ingredient_match_score(text, ingredients):
     text_set = set(text.split())
     ing_set = set(ingredients)
@@ -130,14 +162,14 @@ def ingredient_match_score(text, ingredients):
     if not ing_set:
         return 0
 
-    match = len(text_set & ing_set)
-    return match / len(ing_set)
+    return len(text_set & ing_set) / len(ing_set)
 
-
+# =========================
+# PREDICT
+# =========================
 def predict(text: str):
     text = normalize(text)
 
-    # 🔥 lấy score từ model nếu có
     try:
         scores = model.decision_function([text])[0]
     except:
@@ -155,12 +187,11 @@ def predict(text: str):
 
         ing_score = ingredient_match_score(text, ing_names)
 
-        # 🔥 hybrid scoring
         final_score = (float(score) * 0.7) + (ing_score * 0.3)
 
         results.append({
             "slug": label,
-            "dish": recipe.get("name", label),
+            "dish": dish_names.get(label, auto_vietnamese_name(label)),
             "image": recipe.get("image", "/images/default.jpg"),
             "ingredients": ingredients,
             "steps": recipe.get("steps", []),
@@ -171,10 +202,10 @@ def predict(text: str):
             "match": float(ing_score)
         })
 
-    # 🔥 sort + TOP 5
     results = sorted(results, key=lambda x: x["score"], reverse=True)
 
     return results[:5]
+
 # =========================
 # ROUTES
 # =========================
@@ -195,7 +226,7 @@ def predict_api(data: Input):
     }
 
 # =========================
-# GET RECIPE DETAIL
+# DETAIL
 # =========================
 @app.get("/dish/{dish_id}")
 def get_dish_detail(dish_id: str):
@@ -203,22 +234,18 @@ def get_dish_detail(dish_id: str):
     recipe = recipes.get(dish_id)
 
     if not recipe:
-        # fallback theo id
         for k, v in recipes.items():
             if str(v.get("id")) == str(dish_id):
                 recipe = v
                 break
 
     if not recipe:
-        return {
-            "error": "Không tìm thấy món ăn",
-            "dish_id": dish_id
-        }
+        return {"error": "Không tìm thấy món ăn", "dish_id": dish_id}
 
     return recipe
 
 # =========================
-# STATIC IMAGES
+# STATIC
 # =========================
 if os.path.exists(IMAGES_DIR):
     app.mount("/images", StaticFiles(directory=IMAGES_DIR), name="images")
