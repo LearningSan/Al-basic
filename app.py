@@ -3,11 +3,13 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from fastapi.responses import FileResponse
+
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import json
 import os
 import re
+import threading
 
 # =========================
 # APP
@@ -40,6 +42,9 @@ tokenizer = None
 model = None
 id2label = {}
 recipes = {}
+
+# chống load nhiều lần
+model_lock = threading.Lock()
 
 # =========================
 # LABEL MAP
@@ -93,9 +98,8 @@ dish_names = {
     "banh_mi_thit": "Bánh mì thịt",
     "banh_mi_op_la": "Bánh mì ốp la"
 }
-
 # =========================
-# LOAD MODEL
+# LOAD MODEL (LAZY SAFE)
 # =========================
 def load_model():
     global tokenizer, model, id2label, recipes
@@ -103,26 +107,39 @@ def load_model():
     if model is not None:
         return
 
-    print("🚀 Loading model...")
+    with model_lock:
+        if model is not None:
+            return
 
-    model_name = "OnlySan/AI-suggesting"
-    token = os.getenv("HF_TOKEN")
+        print("🚀 Loading model (lazy)...")
 
-    tokenizer = AutoTokenizer.from_pretrained(model_name, token=token)
-    model = AutoModelForSequenceClassification.from_pretrained(model_name, token=token)
+        model_name = "OnlySan/AI-suggesting"
+        token = os.getenv("HF_TOKEN")
 
-    model.to(device)
-    model.eval()
+        # tối ưu RAM
+        tokenizer = AutoTokenizer.from_pretrained(
+            model_name,
+            token=token
+        )
 
-    # load local data
-    with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
-        id2label = json.load(f)
+        model = AutoModelForSequenceClassification.from_pretrained(
+            model_name,
+            token=token,
+            low_cpu_mem_usage=True
+        )
 
-    with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
-        recipes = json.load(f)
+        model.to(device)
+        model.eval()
+
+        # load local data
+        with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
+            id2label = json.load(f)
+
+        with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
+            recipes = json.load(f)
 
 # =========================
-# NORMALIZE TEXT
+# NORMALIZE
 # =========================
 def normalize(text: str):
     text = text.lower().strip()
@@ -135,7 +152,7 @@ def normalize(text: str):
     return text
 
 # =========================
-# REQUEST MODEL
+# REQUEST
 # =========================
 class Input(BaseModel):
     ingredients: str
@@ -227,13 +244,6 @@ def get_dish_detail(dish_id: str):
         }
 
     return recipe
-
-# =========================
-# STARTUP
-# =========================
-@app.on_event("startup")
-def startup():
-    load_model()
 
 # =========================
 # STATIC FILES
