@@ -1,10 +1,7 @@
 __pycache__/
 *.pyc
-venv/
 .env
 
-dataset/
-train_data/
 results/
 
 model/
@@ -12,9 +9,3 @@ model/
 *.pt
 *.safetensors
 
-images/
-
-results/
-checkpoint-*
-runs/
-logs/
