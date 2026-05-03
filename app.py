@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-
+from fastapi.responses import FileResponse
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 import json
@@ -187,7 +187,7 @@ def predict(text: str):
 # =========================
 @app.get("/")
 def home():
-    return {"message": "🍳 AI Cooking API OK"}
+    return FileResponse("index.html")
 
 @app.post("/predict")
 def predict_api(data: Input):

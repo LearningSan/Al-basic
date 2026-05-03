@@ -126,7 +126,7 @@
 
             ing = preprocessInput(ing, currentMode);
 
-            const res = await fetch("http://localhost:8000/predict", {
+            const res = await fetch("/predict", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ ingredients: ing })
@@ -141,9 +141,7 @@
 
                 if (!r.dish) return;
 
-                const imgSrc = r.image.startsWith("http")
-                    ? r.image
-                    : "http://localhost:8000" + r.image;
+                const imgSrc = r.image;
 
                 list.innerHTML += `
   <div onclick='showDetail(${JSON.stringify(r)})'
@@ -157,9 +155,7 @@
             });
         }
         function showDetail(r) {
-            const imgSrc = r.image.startsWith("http")
-                ? r.image
-                : "http://localhost:8000" + r.image;
+            const imgSrc = r.image;
 
             document.getElementById("detail").innerHTML = `
     <img src="${imgSrc}" class="rounded-lg w-full h-48 object-cover"/>
