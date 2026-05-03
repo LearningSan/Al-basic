@@ -145,28 +145,36 @@ class Input(BaseModel):
 # PREDICT
 # =========================
 def predict(text: str):
-    load_model()
-
-    if model is None:
-        return [{"error": "Model chưa được load trên server"}]
+    global id2label, recipes
 
     text = normalize(text)
 
-    inputs = tokenizer(text, return_tensors="pt", truncation=True, padding=True)
+    # load dữ liệu local (chỉ load 1 lần)
+    if not id2label:
+        with open(os.path.join(BASE_DIR, "model", "labels.json"), encoding="utf-8") as f:
+            id2label = json.load(f)
 
-    with torch.no_grad():
-        logits = model(**inputs).logits
+        with open(os.path.join(BASE_DIR, "model", "recipes.json"), encoding="utf-8") as f:
+            recipes = json.load(f)
 
-    probs = torch.softmax(logits, dim=1)[0]
-    topk = torch.topk(probs, k=3)
+    API_URL = "https://api-inference.huggingface.co/models/OnlySan/AI-suggesting"
+    headers = {
+        "Authorization": f"Bearer {os.getenv('HF_TOKEN')}"
+    }
+
+    response = requests.post(API_URL, headers=headers, json={"inputs": text})
+    data = response.json()
+
+    # HF trả về dạng list
+    if isinstance(data, dict) and "error" in data:
+        return [{"error": data["error"]}]
 
     results = []
 
-    for i in range(len(topk.indices)):
-        idx = int(topk.indices[i])
-        confidence = topk.values[i].item()
+    for item in data[0][:3]:  # top 3
+        label = item["label"]
+        confidence = item["score"]
 
-        label = id2label[str(idx)]
         dish_key = label
 
         recipe = recipes.get(dish_key, {})
